@@ -1,0 +1,53 @@
+{
+  "expo": {
+    "name": "RoutineOs",
+    "slug": "RoutineOs",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "",
+    "scheme": "myapp",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "",
+        "backgroundColor": "#ffffff"
+      },
+      "compileSdkVersion": 34,
+      "targetSdkVersion": 34,
+      "package": "com.anonymous.RoutineOs"
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "static",
+      "favicon": ""
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-splash-screen",
+        {
+          "image": "",
+          "imageWidth": 200,
+          "resizeMode": "contain",
+          "backgroundColor": "#ffffff"
+        }
+      ],
+      "expo-build-properties"
+    ],
+    "experiments": {
+      "typedRoutes": true
+    },
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "e82d3417-5e2e-4307-8ec4-818dac5b06a7"
+      }
+    }
+  }
+}
