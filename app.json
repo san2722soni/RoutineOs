@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "RoutineOs",
-    "slug": "RoutineOs",
+    "slug": "routineos",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "",
@@ -46,6 +46,7 @@
       "eas": {
         "projectId": "7c4ba204-47e7-4c72-8b20-9d2bfa591a64"
       }
-    }
+    },
+    "owner": "inv_aswin"
   }
 }
