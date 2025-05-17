@@ -43,7 +43,7 @@ export default function HomeScreen() {
     const updateSchedule = () => {
       const now = moment();
       const currentDay = now.format("dddd").toLowerCase();
-      const currentTime = now.format("HH:mm");
+      const currentTime = now.format("h:mm A"); // Use 12-hour format with AM/PM to match JSON
 
       // Determine the schedule type based on day
       let scheduleType;
@@ -87,9 +87,38 @@ export default function HomeScreen() {
 
   // Function to find the current activity based on time
   const findCurrentActivity = (schedule, currentTime) => {
+    if (!schedule || !Array.isArray(schedule)) return null;
+    
+    // Convert current time to a moment object in 12-hour format
+    const currentMoment = moment(currentTime, "h:mm A");
+    
     for (const item of schedule) {
-      const [startTime, endTime] = item.time.split(" - ");
-      if (isTimeInRange(currentTime, startTime, endTime)) {
+      if (!item.isEnabled) continue;
+      
+      const timeRange = item.time;
+      const [startTime, endTime] = timeRange.split(" - ");
+      
+      // Handle AM/PM appropriately
+      let startMoment, endMoment;
+      
+      // If end time has AM/PM but start time doesn't, apply end time's AM/PM to start time
+      if (
+        (endTime.includes("AM") || endTime.includes("PM")) && 
+        !(startTime.includes("AM") || startTime.includes("PM"))
+      ) {
+        const meridian = endTime.includes("AM") ? "AM" : "PM";
+        startMoment = moment(startTime + " " + meridian, "h:mm A");
+      } else {
+        startMoment = moment(startTime, "h:mm A");
+      }
+      
+      endMoment = moment(endTime, "h:mm A");
+      
+      // Check if current time is within this range
+      if (
+        currentMoment.isSameOrAfter(startMoment) && 
+        currentMoment.isSameOrBefore(endMoment)
+      ) {
         return item;
       }
     }
@@ -98,21 +127,61 @@ export default function HomeScreen() {
 
   // Function to find the next activity
   const findNextActivity = (schedule, currentTime) => {
-    for (const item of schedule) {
-      const [startTime] = item.time.split(" - ");
-      if (moment(startTime, "HH:mm").format("HH:mm") > currentTime) {
+    if (!schedule || !Array.isArray(schedule)) return null;
+    
+    // Convert current time to a moment object in 12-hour format
+    const currentMoment = moment(currentTime, "h:mm A");
+    
+    // Filter enabled activities
+    const enabledActivities = schedule.filter(item => item.isEnabled);
+    
+    // Sort activities by start time
+    const sortedActivities = [...enabledActivities].sort((a, b) => {
+      const aTimeRange = a.time.split(" - ");
+      const bTimeRange = b.time.split(" - ");
+      
+      let aStartTime = aTimeRange[0];
+      let bStartTime = bTimeRange[0];
+      
+      // Handle AM/PM appropriately
+      if (!(aStartTime.includes("AM") || aStartTime.includes("PM"))) {
+        const aEndTime = aTimeRange[1];
+        const meridian = aEndTime.includes("AM") ? "AM" : "PM";
+        aStartTime += " " + meridian;
+      }
+      
+      if (!(bStartTime.includes("AM") || bStartTime.includes("PM"))) {
+        const bEndTime = bTimeRange[1];
+        const meridian = bEndTime.includes("AM") ? "AM" : "PM";
+        bStartTime += " " + meridian;
+      }
+      
+      const aMoment = moment(aStartTime, "h:mm A");
+      const bMoment = moment(bStartTime, "h:mm A");
+      
+      return aMoment - bMoment;
+    });
+    
+    // Find the next activity after current time
+    for (const item of sortedActivities) {
+      const [startTime, endTime] = item.time.split(" - ");
+      
+      // Handle AM/PM appropriately
+      let startMoment;
+      
+      if (!(startTime.includes("AM") || startTime.includes("PM"))) {
+        const meridian = endTime.includes("AM") ? "AM" : "PM";
+        startMoment = moment(startTime + " " + meridian, "h:mm A");
+      } else {
+        startMoment = moment(startTime, "h:mm A");
+      }
+      
+      if (startMoment.isAfter(currentMoment)) {
         return item;
       }
     }
+    
     return null;
-  };
-
-  // Check if current time is within a range
-  const isTimeInRange = (current, start, end) => {
-    const currentMoment = moment(current, "HH:mm");
-    const startMoment = moment(start, "HH:mm");
-    const endMoment = moment(end, "HH:mm");
-    return currentMoment >= startMoment && currentMoment <= endMoment;
   };
 
   // Function to get filtered schedule based on active tab
@@ -140,77 +209,47 @@ export default function HomeScreen() {
   const getActivityIcon = (activity, category) => {
     const size = 24;
     const color = "#000";
-    const activityLower = activity.toLowerCase();
+    const activityLower = activity?.toLowerCase() || "";
+    const categoryLower = category?.toLowerCase() || "";
 
-    if (
-      activityLower.includes("wake up") ||
-      activityLower.includes("freshen")
-    ) {
+    if (activityLower.includes("wake up") || activityLower.includes("freshen")) {
       return <Sunrise size={size} color={color} />;
-    } else if (
-      activityLower.includes("ShowerHead") ||
-      activityLower.includes("bath")
-    ) {
+    } else if (activityLower.includes("shower") || activityLower.includes("bath")) {
       return <ShowerHead size={size} color={color} />;
-    } else if (
-      activityLower.includes("cs50") ||
-      activityLower.includes("lecture")
-    ) {
+    } else if (activityLower.includes("cs50") || activityLower.includes("lecture")) {
       return <BookOpen size={size} color={color} />;
-    } else if (
-      activityLower.includes("job") ||
-      activityLower.includes("work")
-    ) {
+    } else if (activityLower.includes("job") || activityLower.includes("work") || categoryLower === "work") {
       return <Briefcase size={size} color={color} />;
-    } else if (
-      activityLower.includes("anime") ||
-      activityLower.includes("movie") ||
-      activityLower.includes("series")
-    ) {
+    } else if (activityLower.includes("anime") || activityLower.includes("movie") || activityLower.includes("series")) {
       return <Film size={size} color={color} />;
     } else if (activityLower.includes("project")) {
       return <Lightbulb size={size} color={color} />;
     } else if (
       activityLower.includes("exercise") ||
       activityLower.includes("football") ||
-      activityLower.includes("fitness")
+      activityLower.includes("fitness") ||
+      activityLower.includes("karate") ||
+      categoryLower === "fitness"
     ) {
       return <Dumbbell size={size} color={color} />;
-    } else if (
-      activityLower.includes("valorant") ||
-      activityLower.includes("game")
-    ) {
+    } else if (activityLower.includes("valorant") || activityLower.includes("game")) {
       return <Gamepad2 size={size} color={color} />;
-    } else if (
-      activityLower.includes("study") ||
-      activityLower.includes("reading")
-    ) {
+    } else if (activityLower.includes("study") || activityLower.includes("reading") || categoryLower === "study") {
       return <Brain size={size} color={color} />;
-    } else if (
-      activityLower.includes("code") ||
-      activityLower.includes("programming")
-    ) {
+    } else if (activityLower.includes("code") || activityLower.includes("programming")) {
       return <Code size={size} color={color} />;
-    } else if (
-      activityLower.includes("music") ||
-      activityLower.includes("listen")
-    ) {
+    } else if (activityLower.includes("music") || activityLower.includes("listen")) {
       return <Music size={size} color={color} />;
     } else if (
       activityLower.includes("dinner") ||
       activityLower.includes("breakfast") ||
-      activityLower.includes("lunch")
+      activityLower.includes("lunch") ||
+      activityLower.includes("snack")
     ) {
       return <Utensils size={size} color={color} />;
-    } else if (
-      activityLower.includes("sleep") ||
-      activityLower.includes("rest")
-    ) {
+    } else if (activityLower.includes("sleep") || activityLower.includes("wind down")) {
       return <Moon size={size} color={color} />;
-    } else if (
-      activityLower.includes("relax") ||
-      activityLower.includes("break")
-    ) {
+    } else if (activityLower.includes("relax") || activityLower.includes("break")) {
       return <Sparkles size={size} color={color} />;
     } else {
       return <Coffee size={size} color={color} />;
@@ -220,20 +259,26 @@ export default function HomeScreen() {
   // Get background color based on activity category
   const getActivityColor = (category) => {
     if (!category) return "#f3f4f6"; // Default gray
+    
+    const categoryLower = category.toLowerCase();
 
-    switch (category) {
-      case "Study":
+    switch (categoryLower) {
+      case "study":
         return "#dcfce7"; // Light green
-      case "Work":
+      case "work":
         return "#fee2e2"; // Light red
-      case "Leisure":
+      case "leisure":
         return "#dbeafe"; // Light blue
-      case "Project":
-        return "#fee2e2"; // Light red
-      case "Fitness":
+      case "project":
+        return "#fef3c7"; // Light amber
+      case "fitness":
         return "#fef9c3"; // Light yellow
-      case "Personal":
+      case "personal":
         return "#f3f4f6"; // Light gray
+      case "leisure/project":
+      case "leisure/work": 
+      case "work/leisure":
+        return "#fbcfe8"; // Light pink
       default:
         return "#f3f4f6"; // Default gray
     }
@@ -241,13 +286,22 @@ export default function HomeScreen() {
 
   // Format time for display
   const formatTimeForDisplay = (timeString) => {
-    const [hours, minutes] = timeString.split(":");
-    const hour = Number.parseInt(hours);
-    const formattedHour = hour % 12 || 12;
-    return `${formattedHour}:${minutes}`;
+    if (!timeString) return "";
+    
+    // Extract just the time part, removing AM/PM
+    let formattedTime = timeString;
+    if (timeString.includes("AM") || timeString.includes("PM")) {
+      formattedTime = timeString.split(" ")[0];
+    }
+    
+    return formattedTime;
   };
 
   const filteredSchedule = getFilteredSchedule();
+
+  // For debugging - log current time in the format expected by the app
+  const currentTimeDebug = moment().format("h:mm A");
+  console.log("Current time: ", currentTimeDebug);
 
   return (
     <SafeAreaView className="flex-1 bg-white">
@@ -300,7 +354,7 @@ export default function HomeScreen() {
               className="bg-gray-100 rounded-full px-4 py-2 mt-2"
             >
               <Text className="text-base font-medium">
-                {moment().format("dddd")}
+                {moment().format("dddd")} • {moment().format("h:mm A")}
               </Text>
             </MotiView>
           </View>
@@ -411,8 +465,14 @@ export default function HomeScreen() {
             nestedScrollEnabled={true}
             showsVerticalScrollIndicator={false}
           >
-            {filteredSchedule.map((item, index) => {
+            {filteredSchedule && filteredSchedule.map((item, index) => {
+              // Skip disabled items
+              if (!item.isEnabled) return null;
+              
               const bgColor = getActivityColor(item.category);
+              
+              // Parse time range
+              const [startDisplay, endDisplay] = item.time.split(" - ");
 
               return (
                 <MotiView
@@ -426,16 +486,16 @@ export default function HomeScreen() {
                     {/* Time Block - Made more compact */}
                     <View
                       style={{ backgroundColor: bgColor }}
-                      className="p-3 rounded-xl w-[110px] justify-around flex flex-row items-center "
+                      className="p-3 rounded-xl w-28 justify-around flex flex-row items-center"
                     >
                       <Text className="font-medium text-sm text-gray-800">
-                        {formatTimeForDisplay(item.time.split(" - ")[0])}
+                        {formatTimeForDisplay(startDisplay)}
                       </Text>
-                      <Text className="font-medium text-xs text-gray-500 my-0.5">
+                      <Text className="font-medium text-xs text-gray-500 mx-1">
                         -
                       </Text>
                       <Text className="font-medium text-sm text-gray-800">
-                        {formatTimeForDisplay(item.time.split(" - ")[1])}
+                        {formatTimeForDisplay(endDisplay)}
                       </Text>
                     </View>
 

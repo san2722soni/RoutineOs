@@ -85,7 +85,9 @@
     { "time": "6:00 - 8:00 PM", "activity": "Valorant or project work", "isEnabled": true, "duration": 120, "category": "Leisure/Project", "completed": false },
     { "time": "8:00 - 9:00 PM", "activity": "Movie or web series", "isEnabled": true, "duration": 60, "category": "Leisure", "completed": false },
     { "time": "9:00 - 9:30 PM", "activity": "Light snacks and sleep preparation", "isEnabled": true, "duration": 30, "category": "Personal", "completed": false },
-    { "time": "9:30 - 10:00 PM", "activity": "Wind down, relax, and sleep", "isEnabled": true, "duration": 30, "category": "Personal", "completed": false }
+    { "time": "9:30 - 10:00 PM", "activity": "Wind down, relax, and sleep", "isEnabled": true, "duration": 30, "category": "Personal", "completed": false },
+    { "time": "10:03 - 10:22 PM", "activity": "FUCK", "isEnabled": true, "duration": 30, "category": "Personal", "completed": false },
+    { "time": "10:23 - 10:56 PM", "activity": "FUCKINGsfdsdfsdf", "isEnabled": true, "duration": 30, "category": "Personal", "completed": false }
   ],
   "saturday": [
     { "time": "5:00 - 5:15 AM", "activity": "Wake up and freshen up", "isEnabled": true, "duration": 15, "category": "Personal", "completed": false },
