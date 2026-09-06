@@ -4,7 +4,11 @@
     "slug": "routineos",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "",
+    "icon": "./assets/routineos-mark.svg",
+    "notification": {
+      "icon": "./assets/notification-icon.png",
+      "color": "#38BDF8"
+    },
     "scheme": "myapp",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
@@ -13,9 +17,12 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "",
-        "backgroundColor": "#ffffff"
+          "foregroundImage": "./assets/routineos-mark.svg",
+        "backgroundColor": "#0F172A"
       },
+      "allowBackup": false,
+      "softwareKeyboardLayoutMode": "resize",
+      "permissions": ["ACCESS_COARSE_LOCATION", "ACCESS_FINE_LOCATION", "ACCESS_BACKGROUND_LOCATION"],
       "package": "com.anonymous.RoutineOs"
     },
     "web": {
@@ -28,12 +35,25 @@
       [
         "expo-splash-screen",
         {
-          "image": "./assets/splash.png",
-          "imageWidth": 200,
-          "resizeMode": "contain",
-          "backgroundColor": "#ffffff"
+          "image": "./assets/routineos-mark.svg",
+          "imageWidth": 96,
+          "backgroundColor": "#060709"
         }
       ],
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "RoutineOS needs photo access to set your profile image."
+        }
+      ],
+      "expo-notifications",
+      [
+        "expo-location",
+        {
+          "locationAlwaysAndWhenInUsePermission": "Allow RoutineOS to remind you about tasks when you arrive at saved places."
+        }
+      ],
+      "./plugins/withGoogleMapsApiKey",
       "expo-build-properties"
     ],
     "experiments": {

@@ -1,50 +1,169 @@
-# Welcome to your Expo app 👋
+# RoutineOS
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+RoutineOS is a local-first routine execution app for real life: build reusable work blocks, plan tomorrow, execute today, and keep honest progress without needing constant cloud dependency.
 
-## Get started
+## Why it exists
 
-1. Install dependencies
+Most productivity apps treat planning as a dashboard problem. RoutineOS treats it like a personal operating system:
 
-   ```bash
-   npm install
-   ```
+- reusable building blocks for study, work, fitness, and recovery
+- a daily plan that is locked before the day begins
+- a focused execution layer for what is actually happening right now
+- progress tracking based on the real work done, not fake completion noise
 
-2. Start the app
+## Product model
 
-   ```bash
-    npx expo start
-   ```
+RoutineOS follows a simple lifecycle:
 
-In the output, you'll find options to open the app in a
+1. Manage reusable categories, templates, resources, and content blocks.
+2. Plan a day from a selected template and lock it.
+3. Execute the locked plan in Today.
+4. Review progress and pattern drift in Progress.
+5. Keep settings, reminders, and cloud backup under user control.
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+## Core app stack
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+- Expo SDK 53 + React Native + TypeScript
+- Expo Router file-based navigation
+- NativeWind and Tailwind-based styling
+- Zustand state management with AsyncStorage persistence
+- Supabase for auth, backup, restore, and device validation
+- Expo Notifications + Location for reminders and geofencing
+- Google Places / Maps + Geocoding for saved locations and reminder triggers
 
-## Get a fresh project
+## Main app areas
 
-When you're ready, run:
+- app/: route shells and navigation wrappers
+- src/features/auth/: login, OTP, and callback flows
+- src/features/manage/: categories, templates, resources, and library editing
+- src/features/planner/: tomorrow planning and lock workflow
+- src/features/today/: current-day execution and completion tracking
+- src/features/progress/: analytics and completion review
+- src/features/settings/: profile, reminders, theme, and backup settings
+- src/features/navigation/: tab root and session orchestration
+- src/lib/: app services such as sync, auth, notifications, and data helpers
+- src/store/: local state and persistence layer
 
-```bash
-npm run reset-project
+## System rules
+
+- Local data is the source of truth for day-to-day use.
+- Writes save first on-device, then sync to Supabase when the device is active and online.
+- The app restores cloud state when a user reactivates a device.
+- A single active device is enforced per account for safe ownership and snapshot control.
+- Plans are capped at 18 planned hours to leave space for sleep and recovery.
+- Missed or expired blocks auto-transition to not-done after their end time passes.
+- Reminders and geofences fire locally first and respect retention settings.
+
+## Location + reminder flow
+
+RoutineOS includes a separate reminder/location system with geofencing support:
+
+- Search and save named places using Google Places + Maps
+- Save reminder tasks tied to a location and due date
+- Trigger reminders when the user reaches a saved place
+- Retain completed or uncompleted reminders based on user retention settings
+
+This is implemented through:
+
+- Google Places API for autocomplete and place metadata
+- react-native-maps for map rendering and radius editing
+- Expo Location geofencing for enter/exit triggers
+- local notifications for reminder delivery and preview flow
+
+## Data model
+
+```txt
+profiles
+categories
+routine_templates
+resources
+daily_plans
+execution_events
+device_sessions
+saved_places
+reminder_tasks
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+## Setup
 
-## Learn more
+### 1) Install dependencies
 
-To learn more about developing your project with Expo, look at the following resources:
+```bash
+cd RoutineOs
+npm install
+```
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+### 2) Start the app
 
-## Join the community
+```bash
+npm start
+```
 
-Join our community of developers creating universal apps.
+For Android:
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+```bash
+npm run android
+```
+
+### 3) Create Supabase schema
+
+Run the schema in:
+
+- supabase/schema.sql
+
+For the current Plan/Today test account, run:
+
+- supabase/seed_all_days_invictus.sql
+
+The seed looks up `invictusasw7@gmail.com`, clears only that user's application rows, creates categories/resources/templates, and creates seven daily plans. Today is locked and the following six days are drafts for Plan testing.
+
+### 4) Validate the app
+
+```bash
+npm run typecheck
+npm run lint
+```
+
+## QA and test data
+
+The repo includes realistic SQL seed scripts for testing user flows:
+
+- supabase/seed_all_days_invictus.sql
+- supabase/seed_full_test_anand.sql
+- supabase/seed_thursday_test.sql
+- supabase/seed_realistic_test_data.sql
+
+Each script expects an existing Supabase auth user for the target email and then fills in categories, resources, templates, plans, and reminder-like execution content so the app can be exercised end-to-end.
+
+### Geofence debugging
+
+Use a real Android build, not Expo Go. After saving a location, confirm the app grants foreground and background location permission, notification permission is enabled, and the device battery setting allows RoutineOS to run unrestricted. The app logs geofence registration and background events with the `[Geofence]` prefix. A 50m radius is sensitive to GPS drift; use 100m-200m for the first test.
+
+```powershell
+adb logcat -c
+adb logcat -s ReactNativeJS
+```
+
+Then leave the saved circle and re-enter it. Android may deliver the event after a delay; if no `[Geofence]` event appears, the issue is permission, battery policy, or Android location delivery rather than Supabase backup.
+
+## Product notes
+
+This app is deliberately designed as a focused MVP for routine execution rather than a generic social productivity tool. The priority is:
+
+- clarity over complexity
+- local-first reliability over constant sync noise
+- honest progress over perfectionist dashboards
+- one disciplined flow: plan, execute, review, repeat
+
+## Landing page
+
+A lightweight marketing/portfolio landing page for RoutineOS is included in the frontend folder:
+
+- frontend/
+  - Next.js + Tailwind app
+  - shadcn-inspired design system
+  - product landing page and CTA sections
+
+## License
+
+This project is built for personal product/portfolio use and is not intended as a public SaaS product without review.

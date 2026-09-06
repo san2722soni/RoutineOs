@@ -33,9 +33,13 @@ yarn-error.*
 *.pem
 
 # local env files
+.env
 .env*.local
 
 # typescript
 *.tsbuildinfo
 
 app-example
+
+.vscode
+gradle-8.10.2-all

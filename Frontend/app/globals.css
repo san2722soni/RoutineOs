@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root { color-scheme: dark; }
+html { scroll-behavior: smooth; }
+body { @apply bg-ink text-slate-100 antialiased; font-family: "Trebuchet MS", "Segoe UI", sans-serif; }
+::selection { @apply bg-cyan/40 text-white; }
+
+@layer components {
+  .container-shell { @apply mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8; }
+  .font-heading { font-family: "Space Grotesk", "Trebuchet MS", sans-serif; }
+  .eyebrow { @apply inline-flex items-center gap-2 text-xs font-black uppercase tracking-[0.2em] text-cyan; }
+  .brand-mark { @apply relative flex h-9 w-9 items-center justify-center rounded-[11px] border-2 border-cyan text-cyan; }
+  .brand-mark::before, .brand-mark::after { content: ""; @apply absolute -top-1.5 h-2 w-1.5 rounded-full bg-cyan; }
+  .brand-mark::before { left: 8px; }
+  .brand-mark::after { right: 8px; }
+  .brand-mark span { @apply block h-3 w-3 rotate-[-45deg] border-b-2 border-l-2 border-emerald-200; }
+  .screenshot-frame { @apply overflow-hidden rounded-[2rem] border border-white/20 bg-[#171d21] p-2 shadow-2xl; }
+  .screenshot-frame img, .showcase-image img, .mini-showcase-image img { @apply block h-auto w-full; }
+  .screenshot-topbar { @apply flex items-center justify-between px-3 py-2 font-mono text-[9px] font-bold tracking-[0.18em] text-muted; }
+  .section-number { @apply font-mono text-[11px] font-bold tracking-[0.18em] text-cyan; }
+  .workflow-item { @apply relative min-h-[250px] border-t border-white/15 pt-5; }
+  .showcase-grid { @apply grid items-center gap-12 lg:grid-cols-[0.8fr_1.2fr]; }
+  .showcase-reverse { @apply lg:grid-cols-[1.2fr_0.8fr]; }
+  .showcase-reverse .showcase-copy { @apply lg:order-2; }
+  .showcase-reverse .showcase-image { @apply lg:order-1; }
+  .showcase-copy h3 { @apply mt-5 font-heading text-4xl font-bold tracking-[-0.04em] text-white; }
+  .showcase-copy p { @apply mt-5 max-w-md text-base leading-8 text-muted; }
+  .showcase-image { @apply mx-auto max-w-[370px] overflow-hidden rounded-[2rem] border border-white/15 bg-ink p-2 shadow-2xl; }
+  .showcase-points { @apply mt-8 grid gap-3 text-sm font-bold text-slate-200; }
+  .showcase-points span { @apply flex items-center gap-3; }
+  .showcase-points svg { @apply h-4 w-4 text-cyan; }
+  .mini-showcase { @apply border-t border-white/15 pt-5; }
+  .mini-showcase-image { @apply mb-7 max-h-[430px] overflow-hidden rounded-[1.5rem] border border-white/15 bg-ink p-2; }
+  .mini-showcase-image img { @apply rounded-xl; }
+  .mini-showcase h3 { @apply mt-4 font-heading text-2xl font-bold text-white; }
+  .mini-showcase p { @apply mt-3 text-sm leading-7 text-muted; }
+  .feature-line { @apply flex gap-4 border-t border-white/15 py-7; }
+  .feature-line h3 { @apply font-heading text-xl font-bold text-white; }
+  .feature-line p { @apply mt-2 max-w-md text-sm leading-7 text-muted; }
+}
+
+.hero-wash { position: absolute; inset: 0; pointer-events: none; background-image: linear-gradient(rgba(57,184,237,.07) 1px, transparent 1px), linear-gradient(90deg, rgba(57,184,237,.07) 1px, transparent 1px), radial-gradient(circle at 78% 34%, rgba(57,184,237,.22), transparent 26%), radial-gradient(circle at 18% 72%, rgba(255,227,181,.08), transparent 30%), linear-gradient(135deg, #080b0d 0%, #0c171c 48%, #11131c 100%); background-size: 52px 52px, 52px 52px, auto, auto, auto; }
+.phone-shadow { position: absolute; inset: 13% 6% -7%; background: rgba(57,184,237,.18); filter: blur(70px); transform: rotate(2deg); }
+.typing-cursor { display: inline-block; width: 7px; height: 1em; margin-left: 4px; vertical-align: -2px; background: #39b8ed; animation: blink 1s steps(2, start) infinite; }
+.reveal { opacity: 0; transform: translateY(28px); transition: opacity .8s ease, transform .8s cubic-bezier(.2,.7,.2,1); }
+.reveal-visible { opacity: 1; transform: translateY(0); }
+.cta-grid { position: absolute; inset: 0; opacity: .32; background-image: linear-gradient(rgba(57,184,237,.12) 1px, transparent 1px), linear-gradient(90deg, rgba(57,184,237,.12) 1px, transparent 1px); background-size: 42px 42px; mask-image: radial-gradient(circle at center, #000, transparent 68%); }
+@keyframes blink { 50% { opacity: .15; } }
+@keyframes cell-ripple { 0% { opacity: .3; transform: scale(.96); } 45% { opacity: .95; transform: scale(1.03); } 100% { opacity: .3; transform: scale(1); } }
+.animate-cell-ripple { animation: cell-ripple var(--duration) ease-out var(--delay); }
