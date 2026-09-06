@@ -1,6 +1,6 @@
-import { Modal, Text, TouchableOpacity, View } from "react-native";
-import { AlertTriangle, X } from "lucide-react-native";
 import { appTheme } from "@/src/lib/theme";
+import { AlertTriangle, X } from "lucide-react-native";
+import { Modal, Text, TouchableOpacity, View } from "react-native";
 
 export function ConfirmModal({
   visible,

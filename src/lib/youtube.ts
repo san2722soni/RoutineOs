@@ -145,7 +145,7 @@ export async function fetchPlaylistItems(resourceId: string, playlistUrl: string
   } while (pageToken);
 
   const items: ResourceItem[] = [];
-  for (let i = 0; i < videos.length; i += 50) {
+  for (let i = 0;i < videos.length;i += 50) {
     const chunk = videos.slice(i, i + 50);
     const details = await apiGet<VideosResponse>("videos", {
       part: "snippet,contentDetails",

@@ -1,6 +1,6 @@
+import { appTheme } from "@/src/lib/theme";
 import type { ReactNode } from "react";
 import { Text, View } from "react-native";
-import { appTheme } from "@/src/lib/theme";
 
 export function ScreenHeader({ eyebrow, title, actions, theme }: { eyebrow: string; title: string; actions?: ReactNode; theme: ReturnType<typeof appTheme> }) {
   return (

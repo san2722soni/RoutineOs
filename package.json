@@ -8,8 +8,8 @@
     "ios": "expo run:ios",
     "web": "expo start --web",
     "typecheck": "tsc --noEmit",
-    "test": "jest --runInBand --passWithNoTests",
-    "test:watch": "jest --watchAll",
+    "test": "node --test tests/*.test.cjs",
+    "test:watch": "node --test --watch tests/*.test.cjs",
     "lint": "expo lint"
   },
   "jest": {

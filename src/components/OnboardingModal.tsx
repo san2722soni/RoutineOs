@@ -1,9 +1,9 @@
+import { AppIllustration, type IllustrationName } from "@/src/components/AppIllustration";
+import { appTheme } from "@/src/lib/theme";
+import { X } from "lucide-react-native";
 import { useRef, useState } from "react";
 import { Modal, ScrollView, StatusBar, Text, TouchableOpacity, useWindowDimensions, View, type NativeScrollEvent, type NativeSyntheticEvent } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
-import { X } from "lucide-react-native";
-import { AppIllustration, type IllustrationName } from "@/src/components/AppIllustration";
-import { appTheme } from "@/src/lib/theme";
 
 const slides: { title: string; body: string; illustration: IllustrationName }[] = [
   {

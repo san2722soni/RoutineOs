@@ -1,6 +1,6 @@
+import type { appTheme } from "@/src/lib/theme";
 import type { ReactNode } from "react";
 import { View } from "react-native";
-import type { appTheme } from "@/src/lib/theme";
 
 export function ListCard({
   children,

@@ -1,6 +1,6 @@
-import { Linking, Platform } from "react-native";
-import type { DailyPlan, DailyPlanBlock, Settings } from "@/src/types";
 import { blockEndDate, blockStartDate, formatTime } from "@/src/lib/date";
+import type { DailyPlan, DailyPlanBlock, Settings } from "@/src/types";
+import { Linking, Platform } from "react-native";
 
 type NotificationsModule = typeof import("expo-notifications");
 
@@ -32,7 +32,6 @@ export async function prepareNotifications({ requestPermission = false } = {}) {
     handlerReady = true;
   }
 
-  const permission = requestPermission ? await Notifications.requestPermissionsAsync() : await Notifications.getPermissionsAsync();
 
   if (Platform.OS === "android") {
     await Notifications.setNotificationChannelAsync("routine", {
@@ -42,6 +41,8 @@ export async function prepareNotifications({ requestPermission = false } = {}) {
       lightColor: "#38BDF8",
     });
   }
+
+  const permission = requestPermission ? await Notifications.requestPermissionsAsync() : await Notifications.getPermissionsAsync();
 
   await Notifications.setNotificationCategoryAsync(ROUTINE_START_CATEGORY, [
     { identifier: ROUTINE_OPEN_ACTION, buttonTitle: "Open Today", options: { opensAppToForeground: true } },
@@ -133,7 +134,9 @@ export async function schedulePlansNotifications(plans: DailyPlan[], settings: S
 
   const ready = await prepareNotifications({ requestPermission: true });
   if (!ready) return {};
-  await Notifications.cancelAllScheduledNotificationsAsync();
+  for (const notification of await Notifications.getAllScheduledNotificationsAsync()) {
+    if (notification.content.data?.blockId) await Notifications.cancelScheduledNotificationAsync(notification.identifier);
+  }
 
   const ids: Record<string, string> = {};
   for (const plan of plans.filter((item) => item.status === "locked")) {

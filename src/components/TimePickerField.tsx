@@ -1,8 +1,8 @@
-import { useState } from "react";
-import { Platform, Text, TouchableOpacity, View } from "react-native";
+import { appTheme } from "@/src/lib/theme";
 import DateTimePicker, { type DateTimePickerEvent } from "@react-native-community/datetimepicker";
 import { Clock } from "lucide-react-native";
-import { appTheme } from "@/src/lib/theme";
+import { useState } from "react";
+import { Platform, Text, TouchableOpacity, View } from "react-native";
 
 function dateFromTime(value: string) {
   const [hour = "0", minute = "0"] = value.split(":");

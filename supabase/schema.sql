@@ -18,7 +18,7 @@ alter table profiles add column if not exists theme_mode text not null default '
 alter table profiles add column if not exists sound_enabled boolean not null default true;
 alter table profiles add column if not exists start_reminder_minutes integer not null default 10;
 alter table profiles add column if not exists end_reminder_minutes integer not null default 5;
-alter table profiles add column if not exists reminder_retention_minutes integer not null default 30;
+alter table profiles drop column if exists reminder_retention_minutes;
 alter table profiles add column if not exists onboarding_completed boolean not null default true;
 alter table profiles add column if not exists updated_at timestamptz not null default now();
 alter table profiles drop column if exists notifications_enabled;
@@ -174,7 +174,7 @@ alter table saved_places add column if not exists updated_at timestamptz not nul
 alter table reminder_tasks add column if not exists user_id uuid;
 alter table reminder_tasks add column if not exists title text;
 alter table reminder_tasks add column if not exists place_id uuid;
-alter table reminder_tasks add column if not exists due_date date not null default current_date;
+alter table reminder_tasks drop column if exists due_date;
 alter table reminder_tasks add column if not exists completed boolean not null default false;
 alter table reminder_tasks add column if not exists created_at timestamptz not null default now();
 alter table reminder_tasks add column if not exists completed_at timestamptz;
@@ -378,4 +378,63 @@ create policy "own avatar objects" on storage.objects
   for all using (bucket_id = 'avatars' and (storage.foldername(name))[1] = auth.uid()::text)
   with check (bucket_id = 'avatars' and (storage.foldername(name))[1] = auth.uid()::text);
 
+select pg_notify('pgrst', 'reload schema');
+
+-- Durable deletion markers prevent an older backup/device from reviving deleted data.
+create table if not exists deleted_records (
+  user_id uuid not null,
+  table_name text not null check (table_name in ('categories', 'routine_templates', 'resources', 'daily_plans', 'saved_places', 'reminder_tasks')),
+  record_id text not null,
+  deleted_at timestamptz not null default now(),
+  primary key (user_id, table_name, record_id)
+);
+alter table deleted_records enable row level security;
+drop policy if exists "own deletions" on deleted_records;
+create policy "own deletions" on deleted_records for all
+  using (user_id = auth.uid()) with check (user_id = auth.uid());
+
+-- Every table write and deletion commits together, under the same device lock.
+create or replace function routineos_push_snapshot(p_device_id text, p_snapshot jsonb)
+returns void language plpgsql security invoker set search_path = public as $$
+declare
+  uid uuid := auth.uid();
+  tbl text;
+  rows jsonb;
+  cols text;
+  updates text;
+begin
+  if uid is null then raise exception 'Sign in before syncing.'; end if;
+  perform pg_advisory_xact_lock(hashtextextended(uid::text, 0));
+  if not exists (select 1 from device_sessions where user_id = uid and device_id = p_device_id
+    and revoked_at is null and session_id = coalesce(auth.jwt()->>'session_id', auth.jwt()->>'sid', '')) then
+    raise exception 'inactive-device';
+  end if;
+  insert into deleted_records (user_id, table_name, record_id, deleted_at)
+    select uid, x.table_name, x.record_id, x.deleted_at
+    from jsonb_to_recordset(coalesce(p_snapshot->'deleted_records', '[]')) as x(table_name text, record_id text, deleted_at timestamptz)
+    on conflict (user_id, table_name, record_id) do nothing;
+
+  foreach tbl in array array['reminder_tasks','saved_places','resources','daily_plans','routine_templates','categories'] loop
+    execute format('delete from %I t using deleted_records d where d.user_id = $1 and t.user_id = $1 and d.table_name = $2 and t.id::text = d.record_id', tbl) using uid, tbl;
+  end loop;
+
+  foreach tbl in array array['profiles','categories','routine_templates','resources','daily_plans','execution_events','saved_places','reminder_tasks'] loop
+    rows := coalesce(p_snapshot->tbl, '[]'::jsonb);
+    if tbl = 'profiles' and jsonb_typeof(rows) = 'object' then rows := jsonb_build_array(rows); end if;
+    if jsonb_typeof(rows) <> 'array' then raise exception 'Invalid snapshot table: %', tbl; end if;
+    if jsonb_array_length(rows) = 0 then continue; end if;
+    select jsonb_agg(value || case when tbl = 'profiles' then jsonb_build_object('id', uid) else jsonb_build_object('user_id', uid) end)
+      into rows from jsonb_array_elements(rows);
+    select string_agg(format('%I', key), ', ' order by key),
+      string_agg(format('%I = excluded.%I', key, key), ', ' order by key) filter (where key not in ('id','user_id','created_at'))
+      into cols, updates from jsonb_object_keys(rows->0) as key;
+    execute format('insert into %I (%s) select %s from jsonb_populate_recordset(null::%I, $1) on conflict (id) do update set %s', tbl, cols, cols, tbl, updates) using rows;
+  end loop;
+  foreach tbl in array array['reminder_tasks','saved_places','resources','daily_plans','routine_templates','categories'] loop
+    execute format('delete from %I t using deleted_records d where d.user_id = $1 and t.user_id = $1 and d.table_name = $2 and t.id::text = d.record_id', tbl) using uid, tbl;
+  end loop;
+end;
+$$;
+revoke execute on function routineos_push_snapshot(text, jsonb) from public;
+grant execute on function routineos_push_snapshot(text, jsonb) to authenticated;
 select pg_notify('pgrst', 'reload schema');

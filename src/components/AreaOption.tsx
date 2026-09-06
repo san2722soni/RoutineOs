@@ -1,5 +1,5 @@
-import { Text, TouchableOpacity, View } from "react-native";
 import { appTheme } from "@/src/lib/theme";
+import { Text, TouchableOpacity, View } from "react-native";
 
 export function AreaOption({ label, active, color, theme, onPress }: { label: string; active: boolean; color: string; theme: ReturnType<typeof appTheme>; onPress: () => void }) {
   return (

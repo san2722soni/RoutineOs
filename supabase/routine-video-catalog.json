@@ -1,0 +1,2434 @@
+[
+  {
+    "area": "DSA",
+    "id": "PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+    "url": "https://www.youtube.com/playlist?list=PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+    "type": "youtube-playlist",
+    "items": [
+      {
+        "id": "VTLCoHnyACE",
+        "resourceId": "PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "title": "Lecture 1 : Flowchart & Pseudocode + Installation | DSA Series by Shradha Khapra Ma'am | C++",
+        "url": "https://www.youtube.com/watch?v=VTLCoHnyACE&list=PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "durationSeconds": 5152,
+        "order": 0,
+        "completed": false
+      },
+      {
+        "id": "Dxu7GKtdbnA",
+        "resourceId": "PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "title": "Lecture 2 : Variable, Data Types & Operators | DSA Series by Shradha Ma'am | C++",
+        "url": "https://www.youtube.com/watch?v=Dxu7GKtdbnA&list=PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "durationSeconds": 4604,
+        "order": 1,
+        "completed": false
+      },
+      {
+        "id": "qR9U6bKxJ7g",
+        "resourceId": "PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "title": "Lecture 3: Conditional Statements & Loops | DSA Series by Shradha Ma'am | C++",
+        "url": "https://www.youtube.com/watch?v=qR9U6bKxJ7g&list=PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "durationSeconds": 5679,
+        "order": 2,
+        "completed": false
+      },
+      {
+        "id": "rga_q2N7vU8",
+        "resourceId": "PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "title": "Lecture 4: Patterns | DSA Series by Shradha Khapra Ma'am | C++",
+        "url": "https://www.youtube.com/watch?v=rga_q2N7vU8&list=PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "durationSeconds": 5467,
+        "order": 3,
+        "completed": false
+      },
+      {
+        "id": "P08Z_NC8GuY",
+        "resourceId": "PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "title": "Lecture 5: Functions | DSA Series by Shradha Khapra Ma'am | C++",
+        "url": "https://www.youtube.com/watch?v=P08Z_NC8GuY&list=PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "durationSeconds": 2953,
+        "order": 4,
+        "completed": false
+      },
+      {
+        "id": "xpy5NXiBFvA",
+        "resourceId": "PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "title": "Binary Number System | DSA Series by Shradha Khapra Ma'am | C++",
+        "url": "https://www.youtube.com/watch?v=xpy5NXiBFvA&list=PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "durationSeconds": 2240,
+        "order": 5,
+        "completed": false
+      },
+      {
+        "id": "r-u4uh3QvsQ",
+        "resourceId": "PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "title": "Bitwise Operators, Data Type Modifiers & more | DSA Series by Shradha Khapra Ma'am | C++",
+        "url": "https://www.youtube.com/watch?v=r-u4uh3QvsQ&list=PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "durationSeconds": 2313,
+        "order": 6,
+        "completed": false
+      },
+      {
+        "id": "8wmn7k1TTcI",
+        "resourceId": "PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "title": "Array Data Structure - Part1 | DSA Series by Shradha Khapra Ma'am | C++",
+        "url": "https://www.youtube.com/watch?v=8wmn7k1TTcI&list=PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "durationSeconds": 3247,
+        "order": 7,
+        "completed": false
+      },
+      {
+        "id": "NWg38xWYzEg",
+        "resourceId": "PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "title": "Vectors in C++ | Arrays Part 2 | DSA Series by Shradha Ma'am | Lecture 9",
+        "url": "https://www.youtube.com/watch?v=NWg38xWYzEg&list=PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "durationSeconds": 2406,
+        "order": 8,
+        "completed": false
+      },
+      {
+        "id": "9IZYqostl2M",
+        "resourceId": "PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "title": "Kadane's Algorithm | Maximum Subarray Sum | DSA Series by Shradha Ma'am",
+        "url": "https://www.youtube.com/watch?v=9IZYqostl2M&list=PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "durationSeconds": 1409,
+        "order": 9,
+        "completed": false
+      },
+      {
+        "id": "_xqIp2rj8bo",
+        "resourceId": "PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "title": "Majority Element | Brute- Better-Best Approach | Moore's Voting Algorithm | & Pair Sum",
+        "url": "https://www.youtube.com/watch?v=_xqIp2rj8bo&list=PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "durationSeconds": 2350,
+        "order": 10,
+        "completed": false
+      },
+      {
+        "id": "PwKv8fOcriM",
+        "resourceId": "PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "title": "Time & Space Complexity - DSA Series by Shradha Ma'am",
+        "url": "https://www.youtube.com/watch?v=PwKv8fOcriM&list=PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "durationSeconds": 5141,
+        "order": 11,
+        "completed": false
+      },
+      {
+        "id": "WBzZCm46mFo",
+        "resourceId": "PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "title": "Buy and Sell Stock Problem and Pow(X,N) Power exponential Problem - Leetcode | DSA Series",
+        "url": "https://www.youtube.com/watch?v=WBzZCm46mFo&list=PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "durationSeconds": 1750,
+        "order": 12,
+        "completed": false
+      },
+      {
+        "id": "EbkMABpP52U",
+        "resourceId": "PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "title": "Container with Most Water Problem | Brute & Optimal Solution | Two Pointer Approach - Leetcode 11",
+        "url": "https://www.youtube.com/watch?v=EbkMABpP52U&list=PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "durationSeconds": 1920,
+        "order": 13,
+        "completed": false
+      },
+      {
+        "id": "TW2m8m_FNJE",
+        "resourceId": "PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "title": "Product of Array Except Self | Brute to Optimal Solution | Leetcode 238",
+        "url": "https://www.youtube.com/watch?v=TW2m8m_FNJE&list=PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "durationSeconds": 1770,
+        "order": 14,
+        "completed": false
+      },
+      {
+        "id": "qYEjR6M0wSk",
+        "resourceId": "PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "title": "Pointers in C++ | In Detail | DSA Series by Shradha Ma'am",
+        "url": "https://www.youtube.com/watch?v=qYEjR6M0wSk&list=PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "durationSeconds": 2768,
+        "order": 15,
+        "completed": false
+      },
+      {
+        "id": "TbbSJrY5GqQ",
+        "resourceId": "PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "title": "Binary Search Algorithm - Iterative and Recursive Method | [Theory + Code] with Example",
+        "url": "https://www.youtube.com/watch?v=TbbSJrY5GqQ&list=PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "durationSeconds": 2656,
+        "order": 16,
+        "completed": false
+      },
+      {
+        "id": "6WNZQBHWQJs",
+        "resourceId": "PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "title": "Search in Rotated Sorted Array | Binary Search | Leetcode 33",
+        "url": "https://www.youtube.com/watch?v=6WNZQBHWQJs&list=PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "durationSeconds": 1170,
+        "order": 17,
+        "completed": false
+      },
+      {
+        "id": "RjxD6UXGlhc",
+        "resourceId": "PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "title": "Peak Index in Mountain Array | Binary Search | Leetcode 852",
+        "url": "https://www.youtube.com/watch?v=RjxD6UXGlhc&list=PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "durationSeconds": 1414,
+        "order": 18,
+        "completed": false
+      },
+      {
+        "id": "qsbCBduIs40",
+        "resourceId": "PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "title": "Single Element in Sorted Array | Binary Search | DSA Series Lecture 20",
+        "url": "https://www.youtube.com/watch?v=qsbCBduIs40&list=PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "durationSeconds": 1653,
+        "order": 19,
+        "completed": false
+      },
+      {
+        "id": "JRAByolWqhw",
+        "resourceId": "PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "title": "Book Allocation or Allocate Books Problem | DSA Series - Binary Search",
+        "url": "https://www.youtube.com/watch?v=JRAByolWqhw&list=PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "durationSeconds": 1979,
+        "order": 20,
+        "completed": false
+      },
+      {
+        "id": "srsFN5OHBgw",
+        "resourceId": "PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "title": "Painter's Partition Problem | DSA Placement Series - Binary Search | Lecture 22",
+        "url": "https://www.youtube.com/watch?v=srsFN5OHBgw&list=PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "durationSeconds": 1664,
+        "order": 21,
+        "completed": false
+      },
+      {
+        "id": "7wOzDqsfXy0",
+        "resourceId": "PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "title": "Aggressive Cows Problem | DSA Placement Series - Binary Search | Lecture 23",
+        "url": "https://www.youtube.com/watch?v=7wOzDqsfXy0&list=PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "durationSeconds": 1812,
+        "order": 22,
+        "completed": false
+      },
+      {
+        "id": "1jCFUv-Xlqo",
+        "resourceId": "PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "title": "Sorting Algorithms | Bubble Sort, Selection Sort & Insertion Sort | DSA Series by Shradha Ma'am",
+        "url": "https://www.youtube.com/watch?v=1jCFUv-Xlqo&list=PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "durationSeconds": 2073,
+        "order": 23,
+        "completed": false
+      },
+      {
+        "id": "J48aGjfjYTI",
+        "resourceId": "PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "title": "Sort an Array of 0s, 1s & 2s | DNF Sorting Algorithm | Leetcode 75",
+        "url": "https://www.youtube.com/watch?v=J48aGjfjYTI&list=PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "durationSeconds": 2019,
+        "order": 24,
+        "completed": false
+      },
+      {
+        "id": "-1cLK6PaLsQ",
+        "resourceId": "PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "title": "Merge Sorted Arrays Problem and Next Permutation Problem | DSA Series",
+        "url": "https://www.youtube.com/watch?v=-1cLK6PaLsQ&list=PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "durationSeconds": 2629,
+        "order": 25,
+        "completed": false
+      },
+      {
+        "id": "okhdtEk1iKk",
+        "resourceId": "PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "title": "C++ STL Complete Tutorial | Standard Template Library - One Shot",
+        "url": "https://www.youtube.com/watch?v=okhdtEk1iKk&list=PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "durationSeconds": 5240,
+        "order": 26,
+        "completed": false
+      },
+      {
+        "id": "varXreLWPRo",
+        "resourceId": "PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "title": "How to setup C++ compiler on Mac ? | Software Installation for Mac users",
+        "url": "https://www.youtube.com/watch?v=varXreLWPRo&list=PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "durationSeconds": 100,
+        "order": 27,
+        "completed": false
+      },
+      {
+        "id": "MOSjYaVymcU",
+        "resourceId": "PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "title": "Strings & Character Arrays in C++  -  Part 1 | DSA Placement Series",
+        "url": "https://www.youtube.com/watch?v=MOSjYaVymcU&list=PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "durationSeconds": 1803,
+        "order": 28,
+        "completed": false
+      },
+      {
+        "id": "dSRFgEs3a6A",
+        "resourceId": "PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "title": "Valid Palindrome & Remove all Occurrences | Strings Part 2 | DSA Placement Series",
+        "url": "https://www.youtube.com/watch?v=dSRFgEs3a6A&list=PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "durationSeconds": 1442,
+        "order": 29,
+        "completed": false
+      },
+      {
+        "id": "VXewy91P0S4",
+        "resourceId": "PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "title": "Strings - Part 3 | Permutation in String | DSA Placement Series",
+        "url": "https://www.youtube.com/watch?v=VXewy91P0S4&list=PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "durationSeconds": 1301,
+        "order": 30,
+        "completed": false
+      },
+      {
+        "id": "RitppzIdMCo",
+        "resourceId": "PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "title": "Strings - Part 4 | Reverse Words in String | DSA Placement Series",
+        "url": "https://www.youtube.com/watch?v=RitppzIdMCo&list=PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "durationSeconds": 882,
+        "order": 31,
+        "completed": false
+      },
+      {
+        "id": "cAB15h6-sWA",
+        "resourceId": "PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "title": "String Compression problem - Lecture 32 | Leetcode 443",
+        "url": "https://www.youtube.com/watch?v=cAB15h6-sWA&list=PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "durationSeconds": 1169,
+        "order": 32,
+        "completed": false
+      },
+      {
+        "id": "Y4KdgqV1IqA",
+        "resourceId": "PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "title": "Maths for DSA - One Shot | Euclid's Algorithm | Sieve of Eratosthenes | Modular Arithmetics",
+        "url": "https://www.youtube.com/watch?v=Y4KdgqV1IqA&list=PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "durationSeconds": 3348,
+        "order": 33,
+        "completed": false
+      },
+      {
+        "id": "lBL8327gq8I",
+        "resourceId": "PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "title": "2D Arrays in C++ | Part 1 | DSA Series by Shradha Ma'am",
+        "url": "https://www.youtube.com/watch?v=lBL8327gq8I&list=PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "durationSeconds": 2251,
+        "order": 34,
+        "completed": false
+      },
+      {
+        "id": "LEFFjgt5i6w",
+        "resourceId": "PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "title": "Search a 2D Matrix - Variation I & II | 2D Arrays - Part 2 | DSA Series by Shradha Ma'am",
+        "url": "https://www.youtube.com/watch?v=LEFFjgt5i6w&list=PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "durationSeconds": 2263,
+        "order": 35,
+        "completed": false
+      },
+      {
+        "id": "XMpdvwUObho",
+        "resourceId": "PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "title": "Spiral Matrix | 2D Arrays - Part 3 | Leetcode 54 | DSA Series by Shradha Ma'am",
+        "url": "https://www.youtube.com/watch?v=XMpdvwUObho&list=PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "durationSeconds": 1473,
+        "order": 36,
+        "completed": false
+      },
+      {
+        "id": "0Fxc_jKj2vo",
+        "resourceId": "PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "title": "Two Sum | Find Duplicate | Find Repeating & Missing Values | Hashing Problems",
+        "url": "https://www.youtube.com/watch?v=0Fxc_jKj2vo&list=PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "durationSeconds": 3210,
+        "order": 37,
+        "completed": false
+      },
+      {
+        "id": "K-RsltkN63w",
+        "resourceId": "PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "title": "3 Sum | Brute, Better & Optimized Approach with Codes | Leetcode 15",
+        "url": "https://www.youtube.com/watch?v=K-RsltkN63w&list=PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "durationSeconds": 2623,
+        "order": 38,
+        "completed": false
+      },
+      {
+        "id": "X6sL8JTROLY",
+        "resourceId": "PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "title": "4 Sum Problem | Optimal Approach | DSA Series by Shradha Ma'am",
+        "url": "https://www.youtube.com/watch?v=X6sL8JTROLY&list=PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "durationSeconds": 1382,
+        "order": 39,
+        "completed": false
+      },
+      {
+        "id": "KDH4mhFVvHw",
+        "resourceId": "PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "title": "Subarray Sum Equals K | Brute-Better-Optimal approach",
+        "url": "https://www.youtube.com/watch?v=KDH4mhFVvHw&list=PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "durationSeconds": 2085,
+        "order": 40,
+        "completed": false
+      },
+      {
+        "id": "9OsMG4fI4OY",
+        "resourceId": "PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "title": "Recursion Tutorial - Basics to Advanced | Part 1",
+        "url": "https://www.youtube.com/watch?v=9OsMG4fI4OY&list=PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "durationSeconds": 2782,
+        "order": 41,
+        "completed": false
+      },
+      {
+        "id": "4iT-GhvSKzc",
+        "resourceId": "PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "title": "Recursion Part 2 : Fibonacci numbers problem, Binary search problem, Find if array sorted problem",
+        "url": "https://www.youtube.com/watch?v=4iT-GhvSKzc&list=PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "durationSeconds": 2490,
+        "order": 42,
+        "completed": false
+      },
+      {
+        "id": "pNzljlzDCiI",
+        "resourceId": "PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "title": "Recursion Part 3 : Backtracking in Detail | Print all Subsets | Subsets II",
+        "url": "https://www.youtube.com/watch?v=pNzljlzDCiI&list=PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "durationSeconds": 2540,
+        "order": 43,
+        "completed": false
+      },
+      {
+        "id": "N4gJDGdhpLw",
+        "resourceId": "PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "title": "Permutations of an Array/String | Recursion & Backtracking",
+        "url": "https://www.youtube.com/watch?v=N4gJDGdhpLw&list=PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "durationSeconds": 1375,
+        "order": 44,
+        "completed": false
+      },
+      {
+        "id": "BdSJnIdR-4s",
+        "resourceId": "PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "title": "N-Queens Problem | using Backtracking | Leetcode Hard",
+        "url": "https://www.youtube.com/watch?v=BdSJnIdR-4s&list=PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "durationSeconds": 1466,
+        "order": 45,
+        "completed": false
+      },
+      {
+        "id": "70cP3qtJp-s",
+        "resourceId": "PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "title": "Sudoku Solver Problem | using Backtracking | Leetcode Hard",
+        "url": "https://www.youtube.com/watch?v=70cP3qtJp-s&list=PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "durationSeconds": 1618,
+        "order": 46,
+        "completed": false
+      },
+      {
+        "id": "D8Yze9CDDAw",
+        "resourceId": "PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "title": "Rat in a Maze Problem | Backtracking",
+        "url": "https://www.youtube.com/watch?v=D8Yze9CDDAw&list=PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "durationSeconds": 1965,
+        "order": 47,
+        "completed": false
+      },
+      {
+        "id": "jkgZw2WEaqA",
+        "resourceId": "PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "title": "Combination Sum Problem | Recursion & Backtracking",
+        "url": "https://www.youtube.com/watch?v=jkgZw2WEaqA&list=PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "durationSeconds": 1415,
+        "order": 48,
+        "completed": false
+      },
+      {
+        "id": "aZ0B1eWkSVU",
+        "resourceId": "PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "title": "Palindrome Partitioning Problem | Recursion & Backtracking",
+        "url": "https://www.youtube.com/watch?v=aZ0B1eWkSVU&list=PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "durationSeconds": 1244,
+        "order": 49,
+        "completed": false
+      },
+      {
+        "id": "cQDtOBTy7_Y",
+        "resourceId": "PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "title": "Merge Sort Algorithm | Recursion & Backtracking",
+        "url": "https://www.youtube.com/watch?v=cQDtOBTy7_Y&list=PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "durationSeconds": 1924,
+        "order": 50,
+        "completed": false
+      },
+      {
+        "id": "SBQfXK7q5K4",
+        "resourceId": "PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "title": "One Major update & reaching 1000M views",
+        "url": "https://www.youtube.com/watch?v=SBQfXK7q5K4&list=PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "durationSeconds": 230,
+        "order": 51,
+        "completed": false
+      },
+      {
+        "id": "8MNB0Mba_Dc",
+        "resourceId": "PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "title": "Quick Sort Algorithm - Lecture 51 of Complete DSA Placement Series",
+        "url": "https://www.youtube.com/watch?v=8MNB0Mba_Dc&list=PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "durationSeconds": 1583,
+        "order": 52,
+        "completed": false
+      },
+      {
+        "id": "ynnWDBTdVi0",
+        "resourceId": "PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "title": "Count Inversions Problem | Brute and Optimal",
+        "url": "https://www.youtube.com/watch?v=ynnWDBTdVi0&list=PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "durationSeconds": 1473,
+        "order": 53,
+        "completed": false
+      },
+      {
+        "id": "Sp1jzttFVdE",
+        "resourceId": "PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "title": "KNIGHTS TOUR Problem - Backtracking | Leetcode 2596",
+        "url": "https://www.youtube.com/watch?v=Sp1jzttFVdE&list=PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "durationSeconds": 1352,
+        "order": 54,
+        "completed": false
+      },
+      {
+        "id": "mlIUKyZIUUU",
+        "resourceId": "PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "title": "OOPs Tutorial in One Shot | Object Oriented Programming | in C++ Language | for Placement Interviews",
+        "url": "https://www.youtube.com/watch?v=mlIUKyZIUUU&list=PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "durationSeconds": 7463,
+        "order": 55,
+        "completed": false
+      },
+      {
+        "id": "LyuuqCVkP5I",
+        "resourceId": "PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "title": "Introduction to Linked List | Data Structures & Algorithms",
+        "url": "https://www.youtube.com/watch?v=LyuuqCVkP5I&list=PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "durationSeconds": 3043,
+        "order": 56,
+        "completed": false
+      },
+      {
+        "id": "R-CKBYnOv1U",
+        "resourceId": "PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "title": "Reverse a Linked List | DSA Series by @shradhaKD",
+        "url": "https://www.youtube.com/watch?v=R-CKBYnOv1U&list=PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "durationSeconds": 629,
+        "order": 57,
+        "completed": false
+      },
+      {
+        "id": "nzaHG0dme4g",
+        "resourceId": "PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "title": "Middle of a Linked List | DSA Series by @shradhaKD",
+        "url": "https://www.youtube.com/watch?v=nzaHG0dme4g&list=PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "durationSeconds": 632,
+        "order": 58,
+        "completed": false
+      },
+      {
+        "id": "-1E8ZMS0gSs",
+        "resourceId": "PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "title": "Detect & Remove Cycle in Linked List | DSA Series by @shradhaKD",
+        "url": "https://www.youtube.com/watch?v=-1E8ZMS0gSs&list=PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "durationSeconds": 1824,
+        "order": 59,
+        "completed": false
+      },
+      {
+        "id": "f8RPIb-0DDE",
+        "resourceId": "PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "title": "Merge Two Sorted Lists | DSA Series by @shradhaKD",
+        "url": "https://www.youtube.com/watch?v=f8RPIb-0DDE&list=PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "durationSeconds": 761,
+        "order": 60,
+        "completed": false
+      },
+      {
+        "id": "8ze7Zopdsaw",
+        "resourceId": "PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "title": "Copy List with Random Pointer | DSA Series by @shradhaKD",
+        "url": "https://www.youtube.com/watch?v=8ze7Zopdsaw&list=PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "durationSeconds": 1252,
+        "order": 61,
+        "completed": false
+      },
+      {
+        "id": "bO5DasTsaRQ",
+        "resourceId": "PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "title": "Doubly Linked List Tutorial",
+        "url": "https://www.youtube.com/watch?v=bO5DasTsaRQ&list=PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "durationSeconds": 1936,
+        "order": 62,
+        "completed": false
+      },
+      {
+        "id": "e6lZY5Yha8U",
+        "resourceId": "PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "title": "Circular Linked List in Data Structures",
+        "url": "https://www.youtube.com/watch?v=e6lZY5Yha8U&list=PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "durationSeconds": 2036,
+        "order": 63,
+        "completed": false
+      },
+      {
+        "id": "I8b0rff5F9M",
+        "resourceId": "PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "title": "Flatten a Doubly Linked List | Leetcode 430 | DSA Series by @shradhaKD",
+        "url": "https://www.youtube.com/watch?v=I8b0rff5F9M&list=PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "durationSeconds": 1487,
+        "order": 64,
+        "completed": false
+      },
+      {
+        "id": "-swgIiMIlJo",
+        "resourceId": "PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "title": "Reverse Nodes in K-Group | Linked List",
+        "url": "https://www.youtube.com/watch?v=-swgIiMIlJo&list=PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "durationSeconds": 1239,
+        "order": 65,
+        "completed": false
+      },
+      {
+        "id": "wwbTMNVlFHQ",
+        "resourceId": "PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "title": "Swap Nodes in Pairs | Linked List",
+        "url": "https://www.youtube.com/watch?v=wwbTMNVlFHQ&list=PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "durationSeconds": 1206,
+        "order": 66,
+        "completed": false
+      },
+      {
+        "id": "0X-fV-1ir9c",
+        "resourceId": "PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "title": "Introduction to STACKS | Data Structures & Algorithms | Lecture 66",
+        "url": "https://www.youtube.com/watch?v=0X-fV-1ir9c&list=PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "durationSeconds": 1331,
+        "order": 67,
+        "completed": false
+      },
+      {
+        "id": "NlHupEeDXzY",
+        "resourceId": "PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "title": "Valid Parentheses | Stack | Lecture 67",
+        "url": "https://www.youtube.com/watch?v=NlHupEeDXzY&list=PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "durationSeconds": 985,
+        "order": 68,
+        "completed": false
+      },
+      {
+        "id": "01vBuZyMfqk",
+        "resourceId": "PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "title": "Stock Span Problem | Optimal Solution",
+        "url": "https://www.youtube.com/watch?v=01vBuZyMfqk&list=PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "durationSeconds": 1589,
+        "order": 69,
+        "completed": false
+      },
+      {
+        "id": "NKbExYwvjb0",
+        "resourceId": "PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "title": "Next Greater Element | Optimal Solution & Code",
+        "url": "https://www.youtube.com/watch?v=NKbExYwvjb0&list=PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "durationSeconds": 1412,
+        "order": 70,
+        "completed": false
+      },
+      {
+        "id": "WnjUfBn9nZM",
+        "resourceId": "PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "title": "Previous Smaller Element | Optimal Solution & Code",
+        "url": "https://www.youtube.com/watch?v=WnjUfBn9nZM&list=PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "durationSeconds": 564,
+        "order": 71,
+        "completed": false
+      },
+      {
+        "id": "wHDm-N2m2XY",
+        "resourceId": "PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "title": "Design a Min Stack | Optimal Solution & Code",
+        "url": "https://www.youtube.com/watch?v=wHDm-N2m2XY&list=PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "durationSeconds": 1474,
+        "order": 72,
+        "completed": false
+      },
+      {
+        "id": "ysy1o-QEj3k",
+        "resourceId": "PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "title": "Largest Rectangle in Histogram | Best Solution & Code",
+        "url": "https://www.youtube.com/watch?v=ysy1o-QEj3k&list=PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "durationSeconds": 1976,
+        "order": 73,
+        "completed": false
+      },
+      {
+        "id": "If--3pm9K3U",
+        "resourceId": "PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "title": "L73. Next Greater Element - II | Stack & Queue",
+        "url": "https://www.youtube.com/watch?v=If--3pm9K3U&list=PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "durationSeconds": 1204,
+        "order": 74,
+        "completed": false
+      },
+      {
+        "id": "UHHp8USwx4M",
+        "resourceId": "PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "title": "L74. Trapping Rainwater Problem | Optimal Solution & Code",
+        "url": "https://www.youtube.com/watch?v=UHHp8USwx4M&list=PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "durationSeconds": 1850,
+        "order": 75,
+        "completed": false
+      },
+      {
+        "id": "OZPmEA_8FM8",
+        "resourceId": "PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "title": "L75. The Celebrity Problem | Stack & Queue",
+        "url": "https://www.youtube.com/watch?v=OZPmEA_8FM8&list=PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "durationSeconds": 911,
+        "order": 76,
+        "completed": false
+      },
+      {
+        "id": "GsY6y0iPaHw",
+        "resourceId": "PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "title": "L76. Implement LRU Cache | Linked List",
+        "url": "https://www.youtube.com/watch?v=GsY6y0iPaHw&list=PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "durationSeconds": 2134,
+        "order": 77,
+        "completed": false
+      },
+      {
+        "id": "Khf9v67Ya30",
+        "resourceId": "PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "title": "New Chapter : Queue Data Structure",
+        "url": "https://www.youtube.com/watch?v=Khf9v67Ya30&list=PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "durationSeconds": 1135,
+        "order": 78,
+        "completed": false
+      },
+      {
+        "id": "4mKKolshFD0",
+        "resourceId": "PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "title": "L78. Circular Queue in Data Strucuture",
+        "url": "https://www.youtube.com/watch?v=4mKKolshFD0&list=PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "durationSeconds": 1117,
+        "order": 79,
+        "completed": false
+      },
+      {
+        "id": "sFvP5Ois0CE",
+        "resourceId": "PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "title": "L79. Implement Queue using Stack & Stack using Queue",
+        "url": "https://www.youtube.com/watch?v=sFvP5Ois0CE&list=PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "durationSeconds": 947,
+        "order": 80,
+        "completed": false
+      },
+      {
+        "id": "sqyCBvEQN9c",
+        "resourceId": "PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "title": "L80. First Unique Character in String | Easy - Leetcode387",
+        "url": "https://www.youtube.com/watch?v=sqyCBvEQN9c&list=PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "durationSeconds": 803,
+        "order": 81,
+        "completed": false
+      },
+      {
+        "id": "XwG5cozqfaM",
+        "resourceId": "PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "title": "L81. Sliding Window Maximum | Queue",
+        "url": "https://www.youtube.com/watch?v=XwG5cozqfaM&list=PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "durationSeconds": 1882,
+        "order": 82,
+        "completed": false
+      },
+      {
+        "id": "SmTow5Ht4iU",
+        "resourceId": "PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "title": "L82. Gas Station | Greedy Approach | Leetcode 134",
+        "url": "https://www.youtube.com/watch?v=SmTow5Ht4iU&list=PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "durationSeconds": 1336,
+        "order": 83,
+        "completed": false
+      },
+      {
+        "id": "eKJrXBCRuNQ",
+        "resourceId": "PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "title": "Binary Trees in Data Structures | Tree Traversal | DSA Placement Series",
+        "url": "https://www.youtube.com/watch?v=eKJrXBCRuNQ&list=PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "durationSeconds": 4455,
+        "order": 84,
+        "completed": false
+      },
+      {
+        "id": "7tzHzN_Ehus",
+        "resourceId": "PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "title": "L.84 Height of a Binary Tree | Count of Nodes in a Binary Tree",
+        "url": "https://www.youtube.com/watch?v=7tzHzN_Ehus&list=PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "durationSeconds": 1389,
+        "order": 85,
+        "completed": false
+      },
+      {
+        "id": "tumW7jsjv68",
+        "resourceId": "PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "title": "L.85 Identical Tree (same tree) | Subtree of another Tree",
+        "url": "https://www.youtube.com/watch?v=tumW7jsjv68&list=PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "durationSeconds": 1408,
+        "order": 86,
+        "completed": false
+      },
+      {
+        "id": "aPyDPImR5UM",
+        "resourceId": "PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "title": "L.86 Diameter of Binary Tree",
+        "url": "https://www.youtube.com/watch?v=aPyDPImR5UM&list=PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "durationSeconds": 1169,
+        "order": 87,
+        "completed": false
+      },
+      {
+        "id": "FGr-syrhvOA",
+        "resourceId": "PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "title": "Top View of a Binary Tree | DSA Series : L.87",
+        "url": "https://www.youtube.com/watch?v=FGr-syrhvOA&list=PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "durationSeconds": 1179,
+        "order": 88,
+        "completed": false
+      },
+      {
+        "id": "ze4JO_ODl3w",
+        "resourceId": "PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "title": "Kth Level of a Binary Tree | DSA Series : L.88",
+        "url": "https://www.youtube.com/watch?v=ze4JO_ODl3w&list=PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "durationSeconds": 479,
+        "order": 89,
+        "completed": false
+      },
+      {
+        "id": "oX5D0uKOMck",
+        "resourceId": "PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "title": "Lowest Common Ancestor in Binary Tree | DSA Series : L.89",
+        "url": "https://www.youtube.com/watch?v=oX5D0uKOMck&list=PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "durationSeconds": 1100,
+        "order": 90,
+        "completed": false
+      },
+      {
+        "id": "33b1M980cCA",
+        "resourceId": "PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "title": "Build Tree from Preorder & Inorder | DSA Series : L.90",
+        "url": "https://www.youtube.com/watch?v=33b1M980cCA&list=PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "durationSeconds": 1259,
+        "order": 91,
+        "completed": false
+      },
+      {
+        "id": "TY6kEejJEM0",
+        "resourceId": "PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "title": "Transform to Sum Tree | DSA Series : L.91",
+        "url": "https://www.youtube.com/watch?v=TY6kEejJEM0&list=PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "durationSeconds": 521,
+        "order": 92,
+        "completed": false
+      },
+      {
+        "id": "AWJD__CfM6A",
+        "resourceId": "PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "title": "Binary Tree Paths | DSA Series : L.92",
+        "url": "https://www.youtube.com/watch?v=AWJD__CfM6A&list=PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "durationSeconds": 601,
+        "order": 93,
+        "completed": false
+      },
+      {
+        "id": "rhz-csskg_A",
+        "resourceId": "PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "title": "Maximum Width of Binary Tree | DSA Series : L.93",
+        "url": "https://www.youtube.com/watch?v=rhz-csskg_A&list=PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "durationSeconds": 1269,
+        "order": 94,
+        "completed": false
+      },
+      {
+        "id": "PUfADhkq1LI",
+        "resourceId": "PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "title": "Morris Inorder Traversal | DSA Series : L.94",
+        "url": "https://www.youtube.com/watch?v=PUfADhkq1LI&list=PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "durationSeconds": 1072,
+        "order": 95,
+        "completed": false
+      },
+      {
+        "id": "dU2Z5HWSGM0",
+        "resourceId": "PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "title": "Flatten Binary Tree to Linked List | DSA Series : L.95",
+        "url": "https://www.youtube.com/watch?v=dU2Z5HWSGM0&list=PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "durationSeconds": 943,
+        "order": 96,
+        "completed": false
+      },
+      {
+        "id": "RuF7dPfj27Q",
+        "resourceId": "PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "title": "Binary Search Trees (BSTs) | DSA Series : L.96",
+        "url": "https://www.youtube.com/watch?v=RuF7dPfj27Q&list=PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "durationSeconds": 2596,
+        "order": 97,
+        "completed": false
+      },
+      {
+        "id": "0s6sCjs_4g0",
+        "resourceId": "PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "title": "Sorted Array to Balanced BST | DSA Series : L.97",
+        "url": "https://www.youtube.com/watch?v=0s6sCjs_4g0&list=PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "durationSeconds": 524,
+        "order": 98,
+        "completed": false
+      },
+      {
+        "id": "dSBcCynP1nA",
+        "resourceId": "PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "title": "Validate Binary Search Tree | DSA Series : L.98",
+        "url": "https://www.youtube.com/watch?v=dSBcCynP1nA&list=PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "durationSeconds": 761,
+        "order": 99,
+        "completed": false
+      },
+      {
+        "id": "WZmjRXF_Zi4",
+        "resourceId": "PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "title": "Min Distance between BST Nodes | DSA Series : L.99",
+        "url": "https://www.youtube.com/watch?v=WZmjRXF_Zi4&list=PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "durationSeconds": 856,
+        "order": 100,
+        "completed": false
+      },
+      {
+        "id": "Kq4BbvIhj44",
+        "resourceId": "PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "title": "Kth Smallest in BST | DSA Series : L.100",
+        "url": "https://www.youtube.com/watch?v=Kq4BbvIhj44&list=PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "durationSeconds": 762,
+        "order": 101,
+        "completed": false
+      },
+      {
+        "id": "ORxkZ12FrU4",
+        "resourceId": "PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "title": "Lowest Common Ancestor in BST | DSA Series : L.101",
+        "url": "https://www.youtube.com/watch?v=ORxkZ12FrU4&list=PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "durationSeconds": 749,
+        "order": 102,
+        "completed": false
+      },
+      {
+        "id": "-n5Ur1wE5Jc",
+        "resourceId": "PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "title": "Construct BST from Preorder | DSA Series : L.102",
+        "url": "https://www.youtube.com/watch?v=-n5Ur1wE5Jc&list=PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "durationSeconds": 1150,
+        "order": 103,
+        "completed": false
+      },
+      {
+        "id": "AiKZjCuy2k4",
+        "resourceId": "PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "title": "Merge Two Binary Search Trees | DSA Series : L.103",
+        "url": "https://www.youtube.com/watch?v=AiKZjCuy2k4&list=PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "durationSeconds": 999,
+        "order": 104,
+        "completed": false
+      },
+      {
+        "id": "0KGzfij_SCk",
+        "resourceId": "PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "title": "Recover BST | DSA Series : L.104",
+        "url": "https://www.youtube.com/watch?v=0KGzfij_SCk&list=PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "durationSeconds": 1443,
+        "order": 105,
+        "completed": false
+      },
+      {
+        "id": "Pr-HFxp7npk",
+        "resourceId": "PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "title": "Largest BST in Binary Tree | DSA Series : L.105",
+        "url": "https://www.youtube.com/watch?v=Pr-HFxp7npk&list=PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "durationSeconds": 1496,
+        "order": 106,
+        "completed": false
+      },
+      {
+        "id": "a8VKpW1DsD8",
+        "resourceId": "PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "title": "Populate Next Right Pointers in Each Node | DSA Series : L.106",
+        "url": "https://www.youtube.com/watch?v=a8VKpW1DsD8&list=PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "durationSeconds": 672,
+        "order": 107,
+        "completed": false
+      },
+      {
+        "id": "dS1bKglre3A",
+        "resourceId": "PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "title": "BST Iterator | DSA Series : L.107",
+        "url": "https://www.youtube.com/watch?v=dS1bKglre3A&list=PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "durationSeconds": 1036,
+        "order": 108,
+        "completed": false
+      },
+      {
+        "id": "IHNkql1tAnk",
+        "resourceId": "PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "title": "Inorder Predecessor & Successor in BST | DSA Series : L.108",
+        "url": "https://www.youtube.com/watch?v=IHNkql1tAnk&list=PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "durationSeconds": 1190,
+        "order": 109,
+        "completed": false
+      },
+      {
+        "id": "RpgyCJBbl5E",
+        "resourceId": "PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "title": "Introduction to Graphs | Data Structure & Algorithms",
+        "url": "https://www.youtube.com/watch?v=RpgyCJBbl5E&list=PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "durationSeconds": 1568,
+        "order": 110,
+        "completed": false
+      },
+      {
+        "id": "scQITTLgFJo",
+        "resourceId": "PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "title": "BFS Traversal in Graphs | Data Structure & Algorithms",
+        "url": "https://www.youtube.com/watch?v=scQITTLgFJo&list=PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "durationSeconds": 1111,
+        "order": 111,
+        "completed": false
+      },
+      {
+        "id": "3czYbhac160",
+        "resourceId": "PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "title": "DFS Traversal in Graphs | Data Structure & Algorithms",
+        "url": "https://www.youtube.com/watch?v=3czYbhac160&list=PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "durationSeconds": 843,
+        "order": 112,
+        "completed": false
+      },
+      {
+        "id": "OZClCpPQDR4",
+        "resourceId": "PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "title": "Detect a Cycle in Undirected Graph using DFS | Data Structure & Algorithms",
+        "url": "https://www.youtube.com/watch?v=OZClCpPQDR4&list=PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "durationSeconds": 1185,
+        "order": 113,
+        "completed": false
+      },
+      {
+        "id": "MIjOkApZ39g",
+        "resourceId": "PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "title": "Detect a Cycle in Undirected Graph using BFS | Data Structure & Algorithms",
+        "url": "https://www.youtube.com/watch?v=MIjOkApZ39g&list=PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "durationSeconds": 1103,
+        "order": 114,
+        "completed": false
+      },
+      {
+        "id": "AME6baBpswY",
+        "resourceId": "PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "title": "Number of Islands | Connected Components in Matrix | Leetcode 200",
+        "url": "https://www.youtube.com/watch?v=AME6baBpswY&list=PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "durationSeconds": 1025,
+        "order": 115,
+        "completed": false
+      },
+      {
+        "id": "RmXo5SWkhCs",
+        "resourceId": "PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "title": "Rotting Oranges | Multi-source BFS | Leetcode 994",
+        "url": "https://www.youtube.com/watch?v=RmXo5SWkhCs&list=PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "durationSeconds": 1582,
+        "order": 116,
+        "completed": false
+      },
+      {
+        "id": "AcppN5XFt24",
+        "resourceId": "PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "title": "Detect a Cycle in Directed Graph using DFS | Lecture 116",
+        "url": "https://www.youtube.com/watch?v=AcppN5XFt24&list=PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "durationSeconds": 959,
+        "order": 117,
+        "completed": false
+      },
+      {
+        "id": "0WIINUY12Yg",
+        "resourceId": "PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "title": "Topological Sorting in Graph | using DFS | Lecture 117",
+        "url": "https://www.youtube.com/watch?v=0WIINUY12Yg&list=PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "durationSeconds": 958,
+        "order": 118,
+        "completed": false
+      },
+      {
+        "id": "37cJ38HadM4",
+        "resourceId": "PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "title": "Course Schedule Problem | using Graph & Topological Sort",
+        "url": "https://www.youtube.com/watch?v=37cJ38HadM4&list=PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "durationSeconds": 1074,
+        "order": 119,
+        "completed": false
+      },
+      {
+        "id": "rZsgWxodGmM",
+        "resourceId": "PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "title": "Course Schedule II Problem | using Graph & Topological Sort",
+        "url": "https://www.youtube.com/watch?v=rZsgWxodGmM&list=PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "durationSeconds": 1173,
+        "order": 120,
+        "completed": false
+      },
+      {
+        "id": "JI_e2RzARbM",
+        "resourceId": "PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "title": "Flood Fill Algorithm | Graph Problem",
+        "url": "https://www.youtube.com/watch?v=JI_e2RzARbM&list=PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "durationSeconds": 910,
+        "order": 121,
+        "completed": false
+      },
+      {
+        "id": "BnQpaTZg6Sc",
+        "resourceId": "PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "title": "Topological Sorting using Kahn's Algorithm | Graph  - DSA Lecture 121",
+        "url": "https://www.youtube.com/watch?v=BnQpaTZg6Sc&list=PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "durationSeconds": 1127,
+        "order": 122,
+        "completed": false
+      },
+      {
+        "id": "8gYBHjtjWBI",
+        "resourceId": "PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "title": "Dijkstra's Algorithm - Single Source Shortest Path - Greedy Method",
+        "url": "https://www.youtube.com/watch?v=8gYBHjtjWBI&list=PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "durationSeconds": 2120,
+        "order": 123,
+        "completed": false
+      },
+      {
+        "id": "3rFHlbJ7qKc",
+        "resourceId": "PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "title": "Bellman Ford Algorithm - Single Source Shortest Path - Dynamic Programming",
+        "url": "https://www.youtube.com/watch?v=3rFHlbJ7qKc&list=PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "durationSeconds": 1418,
+        "order": 124,
+        "completed": false
+      },
+      {
+        "id": "YlmU4gBgePA",
+        "resourceId": "PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "title": "DSA Series Quick Update - 125 lectures | New DSA Sheet | DP, Heaps, Tries etc",
+        "url": "https://www.youtube.com/watch?v=YlmU4gBgePA&list=PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "durationSeconds": 384,
+        "order": 125,
+        "completed": false
+      },
+      {
+        "id": "Sflh1z6cIMk",
+        "resourceId": "PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "title": "Prim's Algorithm - Minimum Spanning Tree in Graph",
+        "url": "https://www.youtube.com/watch?v=Sflh1z6cIMk&list=PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "durationSeconds": 1567,
+        "order": 126,
+        "completed": false
+      },
+      {
+        "id": "nnrjWxWMo3E",
+        "resourceId": "PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "title": "Disjoint Set Union | With Rank/Size & Path Compression | Union Find",
+        "url": "https://www.youtube.com/watch?v=nnrjWxWMo3E&list=PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "durationSeconds": 2044,
+        "order": 127,
+        "completed": false
+      },
+      {
+        "id": "inoM6jwj1CA",
+        "resourceId": "PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "title": "Kruskal's Algorithm - Minimum Spanning Tree in Graph",
+        "url": "https://www.youtube.com/watch?v=inoM6jwj1CA&list=PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "durationSeconds": 1747,
+        "order": 128,
+        "completed": false
+      },
+      {
+        "id": "J1yCPIP-K8s",
+        "resourceId": "PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "title": "Number of Provinces | Graph Problem",
+        "url": "https://www.youtube.com/watch?v=J1yCPIP-K8s&list=PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "durationSeconds": 755,
+        "order": 129,
+        "completed": false
+      },
+      {
+        "id": "mEx8JJQJUs8",
+        "resourceId": "PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "title": "Min Cost to Connect All Points | Graph Problem",
+        "url": "https://www.youtube.com/watch?v=mEx8JJQJUs8&list=PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "durationSeconds": 1276,
+        "order": 130,
+        "completed": false
+      },
+      {
+        "id": "CLmykzpeCCs",
+        "resourceId": "PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "title": "Cheapest Flights Within K Stops | Graph Problem",
+        "url": "https://www.youtube.com/watch?v=CLmykzpeCCs&list=PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "durationSeconds": 1829,
+        "order": 131,
+        "completed": false
+      },
+      {
+        "id": "6h1SucBNxgc",
+        "resourceId": "PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "title": "Bridge in Graph using Tarjan's Algorithm | Critical Connections",
+        "url": "https://www.youtube.com/watch?v=6h1SucBNxgc&list=PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "durationSeconds": 1956,
+        "order": 132,
+        "completed": false
+      },
+      {
+        "id": "cn7pov3BEmg",
+        "resourceId": "PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "title": "Articulation Point in Graph using Tarjan's Algorithm | Critical Points",
+        "url": "https://www.youtube.com/watch?v=cn7pov3BEmg&list=PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "durationSeconds": 2213,
+        "order": 133,
+        "completed": false
+      },
+      {
+        "id": "lqY8TE0P1S8",
+        "resourceId": "PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "title": "Strongly Connected Components - Kosaraju's Algorithm | Graphs",
+        "url": "https://www.youtube.com/watch?v=lqY8TE0P1S8&list=PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "durationSeconds": 1586,
+        "order": 134,
+        "completed": false
+      },
+      {
+        "id": "iZBXd-vjHUA",
+        "resourceId": "PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "title": "Floyd Warshall Algorithm | All Pairs Shortest Path in Graph",
+        "url": "https://www.youtube.com/watch?v=iZBXd-vjHUA&list=PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "durationSeconds": 1656,
+        "order": 135,
+        "completed": false
+      },
+      {
+        "id": "uBA8DkCBdco",
+        "resourceId": "PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "title": "Complete Dynamic Programming | DP Series - Lecture 1",
+        "url": "https://www.youtube.com/watch?v=uBA8DkCBdco&list=PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "durationSeconds": 2493,
+        "order": 136,
+        "completed": false
+      },
+      {
+        "id": "3GzA0mz6wp0",
+        "resourceId": "PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "title": "DP 2. Climbing Stairs | 1D Dynamic Programming",
+        "url": "https://www.youtube.com/watch?v=3GzA0mz6wp0&list=PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "durationSeconds": 1586,
+        "order": 137,
+        "completed": false
+      },
+      {
+        "id": "BRmLlJA6ncI",
+        "resourceId": "PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "title": "DP 3. House Robber | 1D Dynamic Programming",
+        "url": "https://www.youtube.com/watch?v=BRmLlJA6ncI&list=PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "durationSeconds": 1543,
+        "order": 138,
+        "completed": false
+      },
+      {
+        "id": "hSMJj9AdNBo",
+        "resourceId": "PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "title": "DP 4. House Robber II | 1D Dynamic Programming",
+        "url": "https://www.youtube.com/watch?v=hSMJj9AdNBo&list=PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "durationSeconds": 1350,
+        "order": 139,
+        "completed": false
+      },
+      {
+        "id": "AKqlgskrZwI",
+        "resourceId": "PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "title": "DP 5. Frog Jump | 1D Dynamic Programming",
+        "url": "https://www.youtube.com/watch?v=AKqlgskrZwI&list=PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "durationSeconds": 1769,
+        "order": 140,
+        "completed": false
+      },
+      {
+        "id": "KwItlcfF9vE",
+        "resourceId": "PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "title": "DP 6. Min Cost Climbing Stairs | 1D Dynamic Programming",
+        "url": "https://www.youtube.com/watch?v=KwItlcfF9vE&list=PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "durationSeconds": 1568,
+        "order": 141,
+        "completed": false
+      },
+      {
+        "id": "yggezlvUN2w",
+        "resourceId": "PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "title": "Fractional Knapsack Algorithm | Greedy Method",
+        "url": "https://www.youtube.com/watch?v=yggezlvUN2w&list=PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "durationSeconds": 993,
+        "order": 142,
+        "completed": false
+      },
+      {
+        "id": "tEW-zDckvFw",
+        "resourceId": "PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "title": "DP 8. 0/1 Knapsack | Recursion to DP Solution | Space Optimized",
+        "url": "https://www.youtube.com/watch?v=tEW-zDckvFw&list=PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+        "durationSeconds": 2703,
+        "order": 143,
+        "completed": false
+      }
+    ]
+  },
+  {
+    "area": "System Design",
+    "id": "PLMCXHnjXnTnvo6alSjVkgxV-VH6EPyvoX",
+    "url": "https://www.youtube.com/playlist?list=PLMCXHnjXnTnvo6alSjVkgxV-VH6EPyvoX",
+    "type": "youtube-playlist",
+    "items": [
+      {
+        "id": "SqcXvc3ZmRU",
+        "resourceId": "PLMCXHnjXnTnvo6alSjVkgxV-VH6EPyvoX",
+        "title": "System Design Primer ⭐️: How to start with distributed systems?",
+        "url": "https://www.youtube.com/watch?v=SqcXvc3ZmRU&list=PLMCXHnjXnTnvo6alSjVkgxV-VH6EPyvoX",
+        "durationSeconds": 562,
+        "order": 0,
+        "completed": false
+      },
+      {
+        "id": "xpDnVSmNFX0",
+        "resourceId": "PLMCXHnjXnTnvo6alSjVkgxV-VH6EPyvoX",
+        "title": "System Design BASICS: Horizontal vs. Vertical Scaling",
+        "url": "https://www.youtube.com/watch?v=xpDnVSmNFX0&list=PLMCXHnjXnTnvo6alSjVkgxV-VH6EPyvoX",
+        "durationSeconds": 476,
+        "order": 1,
+        "completed": false
+      },
+      {
+        "id": "K0Ta65OqQkY",
+        "resourceId": "PLMCXHnjXnTnvo6alSjVkgxV-VH6EPyvoX",
+        "title": "What is LOAD BALANCING? ⚖️",
+        "url": "https://www.youtube.com/watch?v=K0Ta65OqQkY&list=PLMCXHnjXnTnvo6alSjVkgxV-VH6EPyvoX",
+        "durationSeconds": 830,
+        "order": 2,
+        "completed": false
+      },
+      {
+        "id": "zaRkONvyGr8",
+        "resourceId": "PLMCXHnjXnTnvo6alSjVkgxV-VH6EPyvoX",
+        "title": "What is CONSISTENT HASHING and Where is it used?",
+        "url": "https://www.youtube.com/watch?v=zaRkONvyGr8&list=PLMCXHnjXnTnvo6alSjVkgxV-VH6EPyvoX",
+        "durationSeconds": 650,
+        "order": 3,
+        "completed": false
+      },
+      {
+        "id": "oUJbuFMyBDk",
+        "resourceId": "PLMCXHnjXnTnvo6alSjVkgxV-VH6EPyvoX",
+        "title": "What is a MESSAGE QUEUE and Where is it used?",
+        "url": "https://www.youtube.com/watch?v=oUJbuFMyBDk&list=PLMCXHnjXnTnvo6alSjVkgxV-VH6EPyvoX",
+        "durationSeconds": 599,
+        "order": 4,
+        "completed": false
+      },
+      {
+        "id": "qYhRvH9tJKw",
+        "resourceId": "PLMCXHnjXnTnvo6alSjVkgxV-VH6EPyvoX",
+        "title": "What is a MICROSERVICE ARCHITECTURE and what are its advantages?",
+        "url": "https://www.youtube.com/watch?v=qYhRvH9tJKw&list=PLMCXHnjXnTnvo6alSjVkgxV-VH6EPyvoX",
+        "durationSeconds": 499,
+        "order": 5,
+        "completed": false
+      },
+      {
+        "id": "5faMjKuB9bc",
+        "resourceId": "PLMCXHnjXnTnvo6alSjVkgxV-VH6EPyvoX",
+        "title": "What is DATABASE SHARDING?",
+        "url": "https://www.youtube.com/watch?v=5faMjKuB9bc&list=PLMCXHnjXnTnvo6alSjVkgxV-VH6EPyvoX",
+        "durationSeconds": 536,
+        "order": 6,
+        "completed": false
+      },
+      {
+        "id": "zw7VwIlkPPc",
+        "resourceId": "PLMCXHnjXnTnvo6alSjVkgxV-VH6EPyvoX",
+        "title": "Caching in distributed systems: A friendly introduction",
+        "url": "https://www.youtube.com/watch?v=zw7VwIlkPPc&list=PLMCXHnjXnTnvo6alSjVkgxV-VH6EPyvoX",
+        "durationSeconds": 685,
+        "order": 7,
+        "completed": false
+      },
+      {
+        "id": "-BOysyYErLY",
+        "resourceId": "PLMCXHnjXnTnvo6alSjVkgxV-VH6EPyvoX",
+        "title": "How to avoid a single point of failure in distributed systems ✅",
+        "url": "https://www.youtube.com/watch?v=-BOysyYErLY&list=PLMCXHnjXnTnvo6alSjVkgxV-VH6EPyvoX",
+        "durationSeconds": 394,
+        "order": 8,
+        "completed": false
+      },
+      {
+        "id": "b4_6thkYZXs",
+        "resourceId": "PLMCXHnjXnTnvo6alSjVkgxV-VH6EPyvoX",
+        "title": "What is a CDN (Content Delivery Network)?",
+        "url": "https://www.youtube.com/watch?v=b4_6thkYZXs&list=PLMCXHnjXnTnvo6alSjVkgxV-VH6EPyvoX",
+        "durationSeconds": 343,
+        "order": 9,
+        "completed": false
+      },
+      {
+        "id": "FMhbR_kQeHw",
+        "resourceId": "PLMCXHnjXnTnvo6alSjVkgxV-VH6EPyvoX",
+        "title": "What is the Publisher Subscriber Model?",
+        "url": "https://www.youtube.com/watch?v=FMhbR_kQeHw&list=PLMCXHnjXnTnvo6alSjVkgxV-VH6EPyvoX",
+        "durationSeconds": 685,
+        "order": 10,
+        "completed": false
+      },
+      {
+        "id": "rJHTK2TfZ1I",
+        "resourceId": "PLMCXHnjXnTnvo6alSjVkgxV-VH6EPyvoX",
+        "title": "What's an Event Driven System?",
+        "url": "https://www.youtube.com/watch?v=rJHTK2TfZ1I&list=PLMCXHnjXnTnvo6alSjVkgxV-VH6EPyvoX",
+        "durationSeconds": 899,
+        "order": 11,
+        "completed": false
+      },
+      {
+        "id": "xQnIN9bW0og",
+        "resourceId": "PLMCXHnjXnTnvo6alSjVkgxV-VH6EPyvoX",
+        "title": "Introduction to NoSQL databases",
+        "url": "https://www.youtube.com/watch?v=xQnIN9bW0og&list=PLMCXHnjXnTnvo6alSjVkgxV-VH6EPyvoX",
+        "durationSeconds": 1578,
+        "order": 12,
+        "completed": false
+      },
+      {
+        "id": "_YlYuNMTCc8",
+        "resourceId": "PLMCXHnjXnTnvo6alSjVkgxV-VH6EPyvoX",
+        "title": "What is an API and how do you design it? 🗒️✅",
+        "url": "https://www.youtube.com/watch?v=_YlYuNMTCc8&list=PLMCXHnjXnTnvo6alSjVkgxV-VH6EPyvoX",
+        "durationSeconds": 926,
+        "order": 13,
+        "completed": false
+      },
+      {
+        "id": "tndzLznxq40",
+        "resourceId": "PLMCXHnjXnTnvo6alSjVkgxV-VH6EPyvoX",
+        "title": "System Design: TINDER as a microservice architecture",
+        "url": "https://www.youtube.com/watch?v=tndzLznxq40&list=PLMCXHnjXnTnvo6alSjVkgxV-VH6EPyvoX",
+        "durationSeconds": 2201,
+        "order": 14,
+        "completed": false
+      },
+      {
+        "id": "QmX2NPkJTKg",
+        "resourceId": "PLMCXHnjXnTnvo6alSjVkgxV-VH6EPyvoX",
+        "title": "Designing INSTAGRAM: System Design of News Feed",
+        "url": "https://www.youtube.com/watch?v=QmX2NPkJTKg&list=PLMCXHnjXnTnvo6alSjVkgxV-VH6EPyvoX",
+        "durationSeconds": 1469,
+        "order": 15,
+        "completed": false
+      },
+      {
+        "id": "vvhC64hQZMk",
+        "resourceId": "PLMCXHnjXnTnvo6alSjVkgxV-VH6EPyvoX",
+        "title": "WHATSAPP System Design: Chat Messaging Systems for Interviews",
+        "url": "https://www.youtube.com/watch?v=vvhC64hQZMk&list=PLMCXHnjXnTnvo6alSjVkgxV-VH6EPyvoX",
+        "durationSeconds": 1515,
+        "order": 16,
+        "completed": false
+      },
+      {
+        "id": "x9Hrn0oNmJM",
+        "resourceId": "PLMCXHnjXnTnvo6alSjVkgxV-VH6EPyvoX",
+        "title": "How NETFLIX onboards new content: Video Processing at scale 🎥",
+        "url": "https://www.youtube.com/watch?v=x9Hrn0oNmJM&list=PLMCXHnjXnTnvo6alSjVkgxV-VH6EPyvoX",
+        "durationSeconds": 644,
+        "order": 17,
+        "completed": false
+      },
+      {
+        "id": "0myM0k1mjZw",
+        "resourceId": "PLMCXHnjXnTnvo6alSjVkgxV-VH6EPyvoX",
+        "title": "Capacity Planning and Estimation: How much data does YouTube store daily?",
+        "url": "https://www.youtube.com/watch?v=0myM0k1mjZw&list=PLMCXHnjXnTnvo6alSjVkgxV-VH6EPyvoX",
+        "durationSeconds": 792,
+        "order": 18,
+        "completed": false
+      },
+      {
+        "id": "_5vrfuwhvlQ",
+        "resourceId": "PLMCXHnjXnTnvo6alSjVkgxV-VH6EPyvoX",
+        "title": "How databases scale writes: The power of the log ✍️🗒️",
+        "url": "https://www.youtube.com/watch?v=_5vrfuwhvlQ&list=PLMCXHnjXnTnvo6alSjVkgxV-VH6EPyvoX",
+        "durationSeconds": 1042,
+        "order": 19,
+        "completed": false
+      },
+      {
+        "id": "GeGxgmPTe4c",
+        "resourceId": "PLMCXHnjXnTnvo6alSjVkgxV-VH6EPyvoX",
+        "title": "Distributed Consensus and Data Replication strategies on the server",
+        "url": "https://www.youtube.com/watch?v=GeGxgmPTe4c&list=PLMCXHnjXnTnvo6alSjVkgxV-VH6EPyvoX",
+        "durationSeconds": 948,
+        "order": 20,
+        "completed": false
+      },
+      {
+        "id": "OcUKFIjhKu0",
+        "resourceId": "PLMCXHnjXnTnvo6alSjVkgxV-VH6EPyvoX",
+        "title": "Designing a location database: QuadTrees and Hilbert Curves",
+        "url": "https://www.youtube.com/watch?v=OcUKFIjhKu0&list=PLMCXHnjXnTnvo6alSjVkgxV-VH6EPyvoX",
+        "durationSeconds": 1342,
+        "order": 21,
+        "completed": false
+      },
+      {
+        "id": "m4q7VkgDWrM",
+        "resourceId": "PLMCXHnjXnTnvo6alSjVkgxV-VH6EPyvoX",
+        "title": "Data Consistency and Tradeoffs in Distributed Systems",
+        "url": "https://www.youtube.com/watch?v=m4q7VkgDWrM&list=PLMCXHnjXnTnvo6alSjVkgxV-VH6EPyvoX",
+        "durationSeconds": 1542,
+        "order": 22,
+        "completed": false
+      },
+      {
+        "id": "07BVxmVFDGY",
+        "resourceId": "PLMCXHnjXnTnvo6alSjVkgxV-VH6EPyvoX",
+        "title": "System Design Interview: TikTok architecture with @sudocode",
+        "url": "https://www.youtube.com/watch?v=07BVxmVFDGY&list=PLMCXHnjXnTnvo6alSjVkgxV-VH6EPyvoX",
+        "durationSeconds": 2735,
+        "order": 23,
+        "completed": false
+      },
+      {
+        "id": "CtmBGH8MkX4",
+        "resourceId": "PLMCXHnjXnTnvo6alSjVkgxV-VH6EPyvoX",
+        "title": "5 Tips for System Design Interviews",
+        "url": "https://www.youtube.com/watch?v=CtmBGH8MkX4&list=PLMCXHnjXnTnvo6alSjVkgxV-VH6EPyvoX",
+        "durationSeconds": 499,
+        "order": 24,
+        "completed": false
+      },
+      {
+        "id": "CC-AxHIgBSM",
+        "resourceId": "PLMCXHnjXnTnvo6alSjVkgxV-VH6EPyvoX",
+        "title": "System Design Walkthrough at InterviewReady - Designed for SDE 1 to SDE 3 Interview Preparation",
+        "url": "https://www.youtube.com/watch?v=CC-AxHIgBSM&list=PLMCXHnjXnTnvo6alSjVkgxV-VH6EPyvoX",
+        "durationSeconds": 295,
+        "order": 25,
+        "completed": false
+      }
+    ]
+  },
+  {
+    "area": "System Design Practice",
+    "id": "PLinedj3B30sBlBWRox2V2tg9QJ2zr4M3o",
+    "url": "https://www.youtube.com/playlist?list=PLinedj3B30sBlBWRox2V2tg9QJ2zr4M3o",
+    "type": "youtube-playlist",
+    "items": [
+      {
+        "id": "lFeYU31TnQ8",
+        "resourceId": "PLinedj3B30sBlBWRox2V2tg9QJ2zr4M3o",
+        "title": "System Design for Beginners",
+        "url": "https://www.youtube.com/watch?v=lFeYU31TnQ8&list=PLinedj3B30sBlBWRox2V2tg9QJ2zr4M3o",
+        "durationSeconds": 2850,
+        "order": 0,
+        "completed": false
+      },
+      {
+        "id": "YuB3OuF3MUE",
+        "resourceId": "PLinedj3B30sBlBWRox2V2tg9QJ2zr4M3o",
+        "title": "System Design Crash Course - Part 2",
+        "url": "https://www.youtube.com/watch?v=YuB3OuF3MUE&list=PLinedj3B30sBlBWRox2V2tg9QJ2zr4M3o",
+        "durationSeconds": 3009,
+        "order": 1,
+        "completed": false
+      },
+      {
+        "id": "JTmgi0vO5Ug",
+        "resourceId": "PLinedj3B30sBlBWRox2V2tg9QJ2zr4M3o",
+        "title": "System Design - Event Sourcing",
+        "url": "https://www.youtube.com/watch?v=JTmgi0vO5Ug&list=PLinedj3B30sBlBWRox2V2tg9QJ2zr4M3o",
+        "durationSeconds": 1966,
+        "order": 2,
+        "completed": false
+      },
+      {
+        "id": "vNplj9LwQSw",
+        "resourceId": "PLinedj3B30sBlBWRox2V2tg9QJ2zr4M3o",
+        "title": "CQRS System Design Pattern",
+        "url": "https://www.youtube.com/watch?v=vNplj9LwQSw&list=PLinedj3B30sBlBWRox2V2tg9QJ2zr4M3o",
+        "durationSeconds": 2002,
+        "order": 3,
+        "completed": false
+      },
+      {
+        "id": "DwqTon7ZS_s",
+        "resourceId": "PLinedj3B30sBlBWRox2V2tg9QJ2zr4M3o",
+        "title": "Back of Envelope Calculation - System Design Concept",
+        "url": "https://www.youtube.com/watch?v=DwqTon7ZS_s&list=PLinedj3B30sBlBWRox2V2tg9QJ2zr4M3o",
+        "durationSeconds": 1000,
+        "order": 4,
+        "completed": false
+      },
+      {
+        "id": "CVItTb_jdkE",
+        "resourceId": "PLinedj3B30sBlBWRox2V2tg9QJ2zr4M3o",
+        "title": "Master Rate Limiting - System Design",
+        "url": "https://www.youtube.com/watch?v=CVItTb_jdkE&list=PLinedj3B30sBlBWRox2V2tg9QJ2zr4M3o",
+        "durationSeconds": 2425,
+        "order": 5,
+        "completed": false
+      },
+      {
+        "id": "IC5Y1EE-aj4",
+        "resourceId": "PLinedj3B30sBlBWRox2V2tg9QJ2zr4M3o",
+        "title": "Consistent Hashing - System Design",
+        "url": "https://www.youtube.com/watch?v=IC5Y1EE-aj4&list=PLinedj3B30sBlBWRox2V2tg9QJ2zr4M3o",
+        "durationSeconds": 1860,
+        "order": 6,
+        "completed": false
+      },
+      {
+        "id": "-JtjQ-OA7XE",
+        "resourceId": "PLinedj3B30sBlBWRox2V2tg9QJ2zr4M3o",
+        "title": "How Video Streaming Works on Scale - System Design ",
+        "url": "https://www.youtube.com/watch?v=-JtjQ-OA7XE&list=PLinedj3B30sBlBWRox2V2tg9QJ2zr4M3o",
+        "durationSeconds": 1853,
+        "order": 7,
+        "completed": false
+      },
+      {
+        "id": "fqySz1Me2pI",
+        "resourceId": "PLinedj3B30sBlBWRox2V2tg9QJ2zr4M3o",
+        "title": "System Design of UPI Payments",
+        "url": "https://www.youtube.com/watch?v=fqySz1Me2pI&list=PLinedj3B30sBlBWRox2V2tg9QJ2zr4M3o",
+        "durationSeconds": 1525,
+        "order": 8,
+        "completed": false
+      },
+      {
+        "id": "vz0QUa4CS3o",
+        "resourceId": "PLinedj3B30sBlBWRox2V2tg9QJ2zr4M3o",
+        "title": "What are Bloom Filters? | System Design",
+        "url": "https://www.youtube.com/watch?v=vz0QUa4CS3o&list=PLinedj3B30sBlBWRox2V2tg9QJ2zr4M3o",
+        "durationSeconds": 1242,
+        "order": 9,
+        "completed": false
+      },
+      {
+        "id": "Zaz6hYVm-WE",
+        "resourceId": "PLinedj3B30sBlBWRox2V2tg9QJ2zr4M3o",
+        "title": "System Design Behind Multi-Conference Video Calls - WebRTC vs SFU vs MCU",
+        "url": "https://www.youtube.com/watch?v=Zaz6hYVm-WE&list=PLinedj3B30sBlBWRox2V2tg9QJ2zr4M3o",
+        "durationSeconds": 1465,
+        "order": 10,
+        "completed": false
+      },
+      {
+        "id": "TUc_hPtxyf8",
+        "resourceId": "PLinedj3B30sBlBWRox2V2tg9QJ2zr4M3o",
+        "title": "Gossip Protocol System Design",
+        "url": "https://www.youtube.com/watch?v=TUc_hPtxyf8&list=PLinedj3B30sBlBWRox2V2tg9QJ2zr4M3o",
+        "durationSeconds": 2075,
+        "order": 11,
+        "completed": false
+      },
+      {
+        "id": "2tCfITBVKjA",
+        "resourceId": "PLinedj3B30sBlBWRox2V2tg9QJ2zr4M3o",
+        "title": "Master Queues | System Design Interview",
+        "url": "https://www.youtube.com/watch?v=2tCfITBVKjA&list=PLinedj3B30sBlBWRox2V2tg9QJ2zr4M3o",
+        "durationSeconds": 1884,
+        "order": 12,
+        "completed": false
+      },
+      {
+        "id": "OdNpY3WQniQ",
+        "resourceId": "PLinedj3B30sBlBWRox2V2tg9QJ2zr4M3o",
+        "title": "System Design Patterns you should Master Right Now",
+        "url": "https://www.youtube.com/watch?v=OdNpY3WQniQ&list=PLinedj3B30sBlBWRox2V2tg9QJ2zr4M3o",
+        "durationSeconds": 1224,
+        "order": 13,
+        "completed": false
+      }
+    ]
+  },
+  {
+    "area": "JavaScript",
+    "id": "PLbtI3_MArDOnNvk8CCCSR01CQ8B8iNh-A",
+    "url": "https://www.youtube.com/playlist?list=PLbtI3_MArDOnNvk8CCCSR01CQ8B8iNh-A",
+    "type": "youtube-playlist",
+    "items": [
+      {
+        "id": "a-wVHL0lpb0",
+        "resourceId": "PLbtI3_MArDOnNvk8CCCSR01CQ8B8iNh-A",
+        "title": "JavaScript Full Course | JavaScript - Learn Everything | Sheryians Coding School",
+        "url": "https://www.youtube.com/watch?v=a-wVHL0lpb0&list=PLbtI3_MArDOnNvk8CCCSR01CQ8B8iNh-A",
+        "durationSeconds": 29052,
+        "order": 0,
+        "completed": false
+      },
+      {
+        "id": "1aR7tcmWo_w",
+        "resourceId": "PLbtI3_MArDOnNvk8CCCSR01CQ8B8iNh-A",
+        "title": "Part 2 – Master JavaScript & Become a Real Developer | Full Course",
+        "url": "https://www.youtube.com/watch?v=1aR7tcmWo_w&list=PLbtI3_MArDOnNvk8CCCSR01CQ8B8iNh-A",
+        "durationSeconds": 26781,
+        "order": 1,
+        "completed": false
+      },
+      {
+        "id": "wH6uf20dpAo",
+        "resourceId": "PLbtI3_MArDOnNvk8CCCSR01CQ8B8iNh-A",
+        "title": "Part 3 – Advanced JavaScript, Projects & Real Developer Mindset | Full Course",
+        "url": "https://www.youtube.com/watch?v=wH6uf20dpAo&list=PLbtI3_MArDOnNvk8CCCSR01CQ8B8iNh-A",
+        "durationSeconds": 15337,
+        "order": 2,
+        "completed": false
+      },
+      {
+        "id": "GVdBPJzmwQg",
+        "resourceId": "PLbtI3_MArDOnNvk8CCCSR01CQ8B8iNh-A",
+        "title": "Part 4 – JavaScript for Placements | Get Ready for Your First Developer Job",
+        "url": "https://www.youtube.com/watch?v=GVdBPJzmwQg&list=PLbtI3_MArDOnNvk8CCCSR01CQ8B8iNh-A",
+        "durationSeconds": 9531,
+        "order": 3,
+        "completed": false
+      },
+      {
+        "id": "2aHJ-MKY1b0",
+        "resourceId": "PLbtI3_MArDOnNvk8CCCSR01CQ8B8iNh-A",
+        "title": "JS Finally Made Sense After This | JS Project 2 | Kanban Board",
+        "url": "https://www.youtube.com/watch?v=2aHJ-MKY1b0&list=PLbtI3_MArDOnNvk8CCCSR01CQ8B8iNh-A",
+        "durationSeconds": 6859,
+        "order": 4,
+        "completed": false
+      },
+      {
+        "id": "SjgTkATAuxw",
+        "resourceId": "PLbtI3_MArDOnNvk8CCCSR01CQ8B8iNh-A",
+        "title": "JS Will Feel Easy With This Project | JS Project 3 | Image Editor",
+        "url": "https://www.youtube.com/watch?v=SjgTkATAuxw&list=PLbtI3_MArDOnNvk8CCCSR01CQ8B8iNh-A",
+        "durationSeconds": 7776,
+        "order": 5,
+        "completed": false
+      },
+      {
+        "id": "SFLs1fYb5QA",
+        "resourceId": "PLbtI3_MArDOnNvk8CCCSR01CQ8B8iNh-A",
+        "title": "This JS Project will fix your logic problem | JS Game.",
+        "url": "https://www.youtube.com/watch?v=SFLs1fYb5QA&list=PLbtI3_MArDOnNvk8CCCSR01CQ8B8iNh-A",
+        "durationSeconds": 8419,
+        "order": 6,
+        "completed": false
+      }
+    ]
+  },
+  {
+    "area": "Networking",
+    "id": "PLd1s-PEC5Pio",
+    "url": "https://www.youtube.com/playlist?list=PLd1s-PEC5Pio",
+    "type": "youtube-playlist",
+    "items": [
+      {
+        "id": "CltcZTyF5nM",
+        "resourceId": "PLd1s-PEC5Pio",
+        "title": "Introduction to Computer Network Series | Chai aur computer network",
+        "url": "https://www.youtube.com/watch?v=CltcZTyF5nM&list=PLd1s-PEC5Pio",
+        "durationSeconds": 875,
+        "order": 0,
+        "completed": false
+      },
+      {
+        "id": "_dCmQCiQmPE",
+        "resourceId": "PLd1s-PEC5Pio",
+        "title": "What Really Happens When You Make an HTTP Request? Chai aur Computer network",
+        "url": "https://www.youtube.com/watch?v=_dCmQCiQmPE&list=PLd1s-PEC5Pio",
+        "durationSeconds": 1340,
+        "order": 1,
+        "completed": false
+      },
+      {
+        "id": "mM9-9KAP0E8",
+        "resourceId": "PLd1s-PEC5Pio",
+        "title": "03 Mastering IP Address Structure: From Octets to Binary Representation",
+        "url": "https://www.youtube.com/watch?v=mM9-9KAP0E8&list=PLd1s-PEC5Pio",
+        "durationSeconds": 236,
+        "order": 2,
+        "completed": false
+      },
+      {
+        "id": "8QJ8k7jd-K0",
+        "resourceId": "PLd1s-PEC5Pio",
+        "title": "04 Master Networking Basics: Network, Host, and CIDR Demystified",
+        "url": "https://www.youtube.com/watch?v=8QJ8k7jd-K0&list=PLd1s-PEC5Pio",
+        "durationSeconds": 604,
+        "order": 3,
+        "completed": false
+      },
+      {
+        "id": "KVujI1fsQQo",
+        "resourceId": "PLd1s-PEC5Pio",
+        "title": "05 How Subnet Masks Reveal Network Secrets: A Deep Dive",
+        "url": "https://www.youtube.com/watch?v=KVujI1fsQQo&list=PLd1s-PEC5Pio",
+        "durationSeconds": 657,
+        "order": 4,
+        "completed": false
+      },
+      {
+        "id": "Ik-buVzjW3s",
+        "resourceId": "PLd1s-PEC5Pio",
+        "title": "06 Understanding Default Gateway: The Key to Network Communication",
+        "url": "https://www.youtube.com/watch?v=Ik-buVzjW3s&list=PLd1s-PEC5Pio",
+        "durationSeconds": 247,
+        "order": 5,
+        "completed": false
+      },
+      {
+        "id": "PqdrgoYb3Vc",
+        "resourceId": "PLd1s-PEC5Pio",
+        "title": "07 How Default Gateways Facilitate Network Communication",
+        "url": "https://www.youtube.com/watch?v=PqdrgoYb3Vc&list=PLd1s-PEC5Pio",
+        "durationSeconds": 552,
+        "order": 6,
+        "completed": false
+      },
+      {
+        "id": "jKWlJPpkp9o",
+        "resourceId": "PLd1s-PEC5Pio",
+        "title": "08 What is a MAC Address? Understanding Its Structure and Purpose",
+        "url": "https://www.youtube.com/watch?v=jKWlJPpkp9o&list=PLd1s-PEC5Pio",
+        "durationSeconds": 537,
+        "order": 7,
+        "completed": false
+      },
+      {
+        "id": "sMDYh-II22Q",
+        "resourceId": "PLd1s-PEC5Pio",
+        "title": "09 Curious About IP vs MAC Addresses? Here's What You Need to Know!",
+        "url": "https://www.youtube.com/watch?v=sMDYh-II22Q&list=PLd1s-PEC5Pio",
+        "durationSeconds": 482,
+        "order": 8,
+        "completed": false
+      },
+      {
+        "id": "kDAnEyg9nCg",
+        "resourceId": "PLd1s-PEC5Pio",
+        "title": "10 How Does ARP Work in Your Network?",
+        "url": "https://www.youtube.com/watch?v=kDAnEyg9nCg&list=PLd1s-PEC5Pio",
+        "durationSeconds": 557,
+        "order": 9,
+        "completed": false
+      },
+      {
+        "id": "ZOLkWBVMcwU",
+        "resourceId": "PLd1s-PEC5Pio",
+        "title": "11 What Makes OSI and TCP/IP Models Different? Discover the Key Layers",
+        "url": "https://www.youtube.com/watch?v=ZOLkWBVMcwU&list=PLd1s-PEC5Pio",
+        "durationSeconds": 1659,
+        "order": 10,
+        "completed": false
+      },
+      {
+        "id": "GBhaNXK-ows",
+        "resourceId": "PLd1s-PEC5Pio",
+        "title": "12 How Routing Determines Your Data's Journey Across Networks",
+        "url": "https://www.youtube.com/watch?v=GBhaNXK-ows&list=PLd1s-PEC5Pio",
+        "durationSeconds": 1537,
+        "order": 11,
+        "completed": false
+      },
+      {
+        "id": "VzPFY40qAhQ",
+        "resourceId": "PLd1s-PEC5Pio",
+        "title": "13 What Happens When You PING Google? Discover the Secrets of ICMP",
+        "url": "https://www.youtube.com/watch?v=VzPFY40qAhQ&list=PLd1s-PEC5Pio",
+        "durationSeconds": 1503,
+        "order": 12,
+        "completed": false
+      },
+      {
+        "id": "SjMw3nwAhuI",
+        "resourceId": "PLd1s-PEC5Pio",
+        "title": "14 Why UDP is the Unsung Hero of Fast Internet Protocols",
+        "url": "https://www.youtube.com/watch?v=SjMw3nwAhuI&list=PLd1s-PEC5Pio",
+        "durationSeconds": 1075,
+        "order": 13,
+        "completed": false
+      },
+      {
+        "id": "1mTI5X0pN6M",
+        "resourceId": "PLd1s-PEC5Pio",
+        "title": "15 Unveiling the UDP Datagram: A Deep Dive into Its Structure",
+        "url": "https://www.youtube.com/watch?v=1mTI5X0pN6M&list=PLd1s-PEC5Pio",
+        "durationSeconds": 571,
+        "order": 14,
+        "completed": false
+      },
+      {
+        "id": "_JeDNQ22Wxk",
+        "resourceId": "PLd1s-PEC5Pio",
+        "title": "16 How to Inspect UDP Traffic Using Wireshark: A Step-by-Step Guide",
+        "url": "https://www.youtube.com/watch?v=_JeDNQ22Wxk&list=PLd1s-PEC5Pio",
+        "durationSeconds": 1241,
+        "order": 15,
+        "completed": false
+      },
+      {
+        "id": "v4gKJv4C1wo",
+        "resourceId": "PLd1s-PEC5Pio",
+        "title": "17 Understanding TCP: The Backbone of Reliable Internet Communication",
+        "url": "https://www.youtube.com/watch?v=v4gKJv4C1wo&list=PLd1s-PEC5Pio",
+        "durationSeconds": 1193,
+        "order": 16,
+        "completed": false
+      },
+      {
+        "id": "xkP8iBAdgck",
+        "resourceId": "PLd1s-PEC5Pio",
+        "title": "18 Unveiling TCP 3-Way Handshake: The Backbone of Reliable Connections",
+        "url": "https://www.youtube.com/watch?v=xkP8iBAdgck&list=PLd1s-PEC5Pio",
+        "durationSeconds": 783,
+        "order": 17,
+        "completed": false
+      },
+      {
+        "id": "ly6ixTfKpjM",
+        "resourceId": "PLd1s-PEC5Pio",
+        "title": "19 How TCP Connections End: Understanding the 4-Way Termination",
+        "url": "https://www.youtube.com/watch?v=ly6ixTfKpjM&list=PLd1s-PEC5Pio",
+        "durationSeconds": 295,
+        "order": 18,
+        "completed": false
+      },
+      {
+        "id": "YryEKDfMXQw",
+        "resourceId": "PLd1s-PEC5Pio",
+        "title": "20 TCP Sequence & Acknowledgment Numbers (Complete Guide)",
+        "url": "https://www.youtube.com/watch?v=YryEKDfMXQw&list=PLd1s-PEC5Pio",
+        "durationSeconds": 1850,
+        "order": 19,
+        "completed": false
+      },
+      {
+        "id": "_d4_vkSQIEk",
+        "resourceId": "PLd1s-PEC5Pio",
+        "title": "21 Anatomy of a TCP Segment",
+        "url": "https://www.youtube.com/watch?v=_d4_vkSQIEk&list=PLd1s-PEC5Pio",
+        "durationSeconds": 2136,
+        "order": 20,
+        "completed": false
+      },
+      {
+        "id": "18-nbrEEU9o",
+        "resourceId": "PLd1s-PEC5Pio",
+        "title": "22 MTU MSS PMTUD in computer networks",
+        "url": "https://www.youtube.com/watch?v=18-nbrEEU9o&list=PLd1s-PEC5Pio",
+        "durationSeconds": 1914,
+        "order": 21,
+        "completed": false
+      },
+      {
+        "id": "PL_6aNL_KqY",
+        "resourceId": "PLd1s-PEC5Pio",
+        "title": "23 TCP Flow Control",
+        "url": "https://www.youtube.com/watch?v=PL_6aNL_KqY&list=PLd1s-PEC5Pio",
+        "durationSeconds": 2375,
+        "order": 22,
+        "completed": false
+      },
+      {
+        "id": "B3JwzcPTZDw",
+        "resourceId": "PLd1s-PEC5Pio",
+        "title": "24 TCP Congestion Control",
+        "url": "https://www.youtube.com/watch?v=B3JwzcPTZDw&list=PLd1s-PEC5Pio",
+        "durationSeconds": 3684,
+        "order": 23,
+        "completed": false
+      },
+      {
+        "id": "EbdEqHTYZFA",
+        "resourceId": "PLd1s-PEC5Pio",
+        "title": "25 Inspect TCP with Wireshark",
+        "url": "https://www.youtube.com/watch?v=EbdEqHTYZFA&list=PLd1s-PEC5Pio",
+        "durationSeconds": 2677,
+        "order": 24,
+        "completed": false
+      },
+      {
+        "id": "pNfNTgEVvQg",
+        "resourceId": "PLd1s-PEC5Pio",
+        "title": "26 How DNS works",
+        "url": "https://www.youtube.com/watch?v=pNfNTgEVvQg&list=PLd1s-PEC5Pio",
+        "durationSeconds": 1648,
+        "order": 25,
+        "completed": false
+      },
+      {
+        "id": "_PugVKzp3ig",
+        "resourceId": "PLd1s-PEC5Pio",
+        "title": "27 Major DNS records explained",
+        "url": "https://www.youtube.com/watch?v=_PugVKzp3ig&list=PLd1s-PEC5Pio",
+        "durationSeconds": 2525,
+        "order": 26,
+        "completed": false
+      },
+      {
+        "id": "P31T7461kfs",
+        "resourceId": "PLd1s-PEC5Pio",
+        "title": "28 DNS and Wireshark",
+        "url": "https://www.youtube.com/watch?v=P31T7461kfs&list=PLd1s-PEC5Pio",
+        "durationSeconds": 1008,
+        "order": 27,
+        "completed": false
+      },
+      {
+        "id": "5n5_IRlYr64",
+        "resourceId": "PLd1s-PEC5Pio",
+        "title": "29 HTTP overview",
+        "url": "https://www.youtube.com/watch?v=5n5_IRlYr64&list=PLd1s-PEC5Pio",
+        "durationSeconds": 498,
+        "order": 28,
+        "completed": false
+      },
+      {
+        "id": "tNulpc4RLWU",
+        "resourceId": "PLd1s-PEC5Pio",
+        "title": "30 http 1.0 vs http 1.1",
+        "url": "https://www.youtube.com/watch?v=tNulpc4RLWU&list=PLd1s-PEC5Pio",
+        "durationSeconds": 416,
+        "order": 29,
+        "completed": false
+      },
+      {
+        "id": "rZNdo9UjF94",
+        "resourceId": "PLd1s-PEC5Pio",
+        "title": "31 HTTP Request Response structure",
+        "url": "https://www.youtube.com/watch?v=rZNdo9UjF94&list=PLd1s-PEC5Pio",
+        "durationSeconds": 855,
+        "order": 30,
+        "completed": false
+      },
+      {
+        "id": "bIPvH42Jesk",
+        "resourceId": "PLd1s-PEC5Pio",
+        "title": "32 HTTP 1.1 in action",
+        "url": "https://www.youtube.com/watch?v=bIPvH42Jesk&list=PLd1s-PEC5Pio",
+        "durationSeconds": 440,
+        "order": 31,
+        "completed": false
+      },
+      {
+        "id": "zoKBDaihBlU",
+        "resourceId": "PLd1s-PEC5Pio",
+        "title": "33 HTTP 1.1 head of line blocking in action",
+        "url": "https://www.youtube.com/watch?v=zoKBDaihBlU&list=PLd1s-PEC5Pio",
+        "durationSeconds": 553,
+        "order": 32,
+        "completed": false
+      },
+      {
+        "id": "yqVkmfAO1Dw",
+        "resourceId": "PLd1s-PEC5Pio",
+        "title": "34 HTTP 2 overview how it works",
+        "url": "https://www.youtube.com/watch?v=yqVkmfAO1Dw&list=PLd1s-PEC5Pio",
+        "durationSeconds": 791,
+        "order": 33,
+        "completed": false
+      },
+      {
+        "id": "dX0DK0zt6WU",
+        "resourceId": "PLd1s-PEC5Pio",
+        "title": "35 HTTP 2 frames in depth",
+        "url": "https://www.youtube.com/watch?v=dX0DK0zt6WU&list=PLd1s-PEC5Pio",
+        "durationSeconds": 1352,
+        "order": 34,
+        "completed": false
+      },
+      {
+        "id": "9M-i2QIBZ9c",
+        "resourceId": "PLd1s-PEC5Pio",
+        "title": "36 why http 2 is binary protocol",
+        "url": "https://www.youtube.com/watch?v=9M-i2QIBZ9c&list=PLd1s-PEC5Pio",
+        "durationSeconds": 1268,
+        "order": 35,
+        "completed": false
+      },
+      {
+        "id": "M5ecS9oPRtk",
+        "resourceId": "PLd1s-PEC5Pio",
+        "title": "37 HPACK explained in depth",
+        "url": "https://www.youtube.com/watch?v=M5ecS9oPRtk&list=PLd1s-PEC5Pio",
+        "durationSeconds": 4473,
+        "order": 36,
+        "completed": false
+      },
+      {
+        "id": "75UeaBsdbF0",
+        "resourceId": "PLd1s-PEC5Pio",
+        "title": "38 HTTP2 Head of Line Blocking",
+        "url": "https://www.youtube.com/watch?v=75UeaBsdbF0&list=PLd1s-PEC5Pio",
+        "durationSeconds": 737,
+        "order": 37,
+        "completed": false
+      },
+      {
+        "id": "ZAJVKmZ-dh4",
+        "resourceId": "PLd1s-PEC5Pio",
+        "title": "39 QUIC protocol overview",
+        "url": "https://www.youtube.com/watch?v=ZAJVKmZ-dh4&list=PLd1s-PEC5Pio",
+        "durationSeconds": 1693,
+        "order": 38,
+        "completed": false
+      },
+      {
+        "id": "5pfM-fD42eY",
+        "resourceId": "PLd1s-PEC5Pio",
+        "title": "44 mathematics behind diffie hellman",
+        "url": "https://www.youtube.com/watch?v=5pfM-fD42eY&list=PLd1s-PEC5Pio",
+        "durationSeconds": 0,
+        "order": 39,
+        "completed": false
+      },
+      {
+        "id": "x1AY140_JXE",
+        "resourceId": "PLd1s-PEC5Pio",
+        "title": "45 TLS 1.2 handshake in depth",
+        "url": "https://www.youtube.com/watch?v=x1AY140_JXE&list=PLd1s-PEC5Pio",
+        "durationSeconds": 0,
+        "order": 40,
+        "completed": false
+      },
+      {
+        "id": "kFl9UttIlZI",
+        "resourceId": "PLd1s-PEC5Pio",
+        "title": "46 TLS 1.3 handshake fwd sec in depth",
+        "url": "https://www.youtube.com/watch?v=kFl9UttIlZI&list=PLd1s-PEC5Pio",
+        "durationSeconds": 0,
+        "order": 41,
+        "completed": false
+      },
+      {
+        "id": "VdfL9H2vEkU",
+        "resourceId": "PLd1s-PEC5Pio",
+        "title": "47 NAT explained",
+        "url": "https://www.youtube.com/watch?v=VdfL9H2vEkU&list=PLd1s-PEC5Pio",
+        "durationSeconds": 0,
+        "order": 42,
+        "completed": false
+      },
+      {
+        "id": "UzWpKcMlaMg",
+        "resourceId": "PLd1s-PEC5Pio",
+        "title": "48 IP packet anatomy",
+        "url": "https://www.youtube.com/watch?v=UzWpKcMlaMg&list=PLd1s-PEC5Pio",
+        "durationSeconds": 0,
+        "order": 43,
+        "completed": false
+      },
+      {
+        "id": "QlKwKssPYWI",
+        "resourceId": "PLd1s-PEC5Pio",
+        "title": "49 ip4 wireshark",
+        "url": "https://www.youtube.com/watch?v=QlKwKssPYWI&list=PLd1s-PEC5Pio",
+        "durationSeconds": 0,
+        "order": 44,
+        "completed": false
+      },
+      {
+        "id": "CI7Dx-m1eQ4",
+        "resourceId": "PLd1s-PEC5Pio",
+        "title": "40 HTTP3 how it uses quic in depth",
+        "url": "https://www.youtube.com/watch?v=CI7Dx-m1eQ4&list=PLd1s-PEC5Pio",
+        "durationSeconds": 1448,
+        "order": 45,
+        "completed": false
+      },
+      {
+        "id": "iM8Dx61uNRc",
+        "resourceId": "PLd1s-PEC5Pio",
+        "title": "41 TLS overview",
+        "url": "https://www.youtube.com/watch?v=iM8Dx61uNRc&list=PLd1s-PEC5Pio",
+        "durationSeconds": 545,
+        "order": 46,
+        "completed": false
+      },
+      {
+        "id": "a6LG-fUiuK0",
+        "resourceId": "PLd1s-PEC5Pio",
+        "title": "42 Math behind RSA algo",
+        "url": "https://www.youtube.com/watch?v=a6LG-fUiuK0&list=PLd1s-PEC5Pio",
+        "durationSeconds": 1115,
+        "order": 47,
+        "completed": false
+      },
+      {
+        "id": "Q1xFSzr9biI",
+        "resourceId": "PLd1s-PEC5Pio",
+        "title": "43 TLS certificates explained in depth",
+        "url": "https://www.youtube.com/watch?v=Q1xFSzr9biI&list=PLd1s-PEC5Pio",
+        "durationSeconds": 2131,
+        "order": 48,
+        "completed": false
+      }
+    ]
+  },
+  {
+    "area": "SQL",
+    "id": "hlGoQC332VM",
+    "url": "https://www.youtube.com/watch?v=hlGoQC332VM",
+    "type": "youtube-video",
+    "items": [
+      {
+        "id": "hlGoQC332VM-chunk-1",
+        "resourceId": "hlGoQC332VM",
+        "title": "SQL - Complete Course in 3 Hours | SQL One Shot using MySQL (0:00-30:00)",
+        "url": "https://www.youtube.com/watch?v=hlGoQC332VM&t=0s",
+        "durationSeconds": 1800,
+        "order": 0,
+        "completed": false
+      },
+      {
+        "id": "hlGoQC332VM-chunk-2",
+        "resourceId": "hlGoQC332VM",
+        "title": "SQL - Complete Course in 3 Hours | SQL One Shot using MySQL (30:00-1:00:00)",
+        "url": "https://www.youtube.com/watch?v=hlGoQC332VM&t=1800s",
+        "durationSeconds": 1800,
+        "order": 1,
+        "completed": false
+      },
+      {
+        "id": "hlGoQC332VM-chunk-3",
+        "resourceId": "hlGoQC332VM",
+        "title": "SQL - Complete Course in 3 Hours | SQL One Shot using MySQL (1:00:00-1:30:00)",
+        "url": "https://www.youtube.com/watch?v=hlGoQC332VM&t=3600s",
+        "durationSeconds": 1800,
+        "order": 2,
+        "completed": false
+      },
+      {
+        "id": "hlGoQC332VM-chunk-4",
+        "resourceId": "hlGoQC332VM",
+        "title": "SQL - Complete Course in 3 Hours | SQL One Shot using MySQL (1:30:00-2:00:00)",
+        "url": "https://www.youtube.com/watch?v=hlGoQC332VM&t=5400s",
+        "durationSeconds": 1800,
+        "order": 3,
+        "completed": false
+      },
+      {
+        "id": "hlGoQC332VM-chunk-5",
+        "resourceId": "hlGoQC332VM",
+        "title": "SQL - Complete Course in 3 Hours | SQL One Shot using MySQL (2:00:00-2:30:00)",
+        "url": "https://www.youtube.com/watch?v=hlGoQC332VM&t=7200s",
+        "durationSeconds": 1800,
+        "order": 4,
+        "completed": false
+      },
+      {
+        "id": "hlGoQC332VM-chunk-6",
+        "resourceId": "hlGoQC332VM",
+        "title": "SQL - Complete Course in 3 Hours | SQL One Shot using MySQL (2:30:00-3:00:00)",
+        "url": "https://www.youtube.com/watch?v=hlGoQC332VM&t=9000s",
+        "durationSeconds": 1800,
+        "order": 5,
+        "completed": false
+      },
+      {
+        "id": "hlGoQC332VM-chunk-7",
+        "resourceId": "hlGoQC332VM",
+        "title": "SQL - Complete Course in 3 Hours | SQL One Shot using MySQL (3:00:00-3:16:14)",
+        "url": "https://www.youtube.com/watch?v=hlGoQC332VM&t=10800s",
+        "durationSeconds": 974,
+        "order": 6,
+        "completed": false
+      }
+    ]
+  },
+  {
+    "area": "JavaScript",
+    "id": "a-wVHL0lpb0",
+    "url": "https://www.youtube.com/watch?v=a-wVHL0lpb0",
+    "type": "youtube-video",
+    "items": [
+      {
+        "id": "a-wVHL0lpb0-chunk-1",
+        "resourceId": "a-wVHL0lpb0",
+        "title": "JavaScript Full Course | JavaScript - Learn Everything | Sheryians Coding School (0:00-30:00)",
+        "url": "https://www.youtube.com/watch?v=a-wVHL0lpb0&t=0s",
+        "durationSeconds": 1800,
+        "order": 0,
+        "completed": false
+      },
+      {
+        "id": "a-wVHL0lpb0-chunk-2",
+        "resourceId": "a-wVHL0lpb0",
+        "title": "JavaScript Full Course | JavaScript - Learn Everything | Sheryians Coding School (30:00-1:00:00)",
+        "url": "https://www.youtube.com/watch?v=a-wVHL0lpb0&t=1800s",
+        "durationSeconds": 1800,
+        "order": 1,
+        "completed": false
+      },
+      {
+        "id": "a-wVHL0lpb0-chunk-3",
+        "resourceId": "a-wVHL0lpb0",
+        "title": "JavaScript Full Course | JavaScript - Learn Everything | Sheryians Coding School (1:00:00-1:30:00)",
+        "url": "https://www.youtube.com/watch?v=a-wVHL0lpb0&t=3600s",
+        "durationSeconds": 1800,
+        "order": 2,
+        "completed": false
+      },
+      {
+        "id": "a-wVHL0lpb0-chunk-4",
+        "resourceId": "a-wVHL0lpb0",
+        "title": "JavaScript Full Course | JavaScript - Learn Everything | Sheryians Coding School (1:30:00-2:00:00)",
+        "url": "https://www.youtube.com/watch?v=a-wVHL0lpb0&t=5400s",
+        "durationSeconds": 1800,
+        "order": 3,
+        "completed": false
+      },
+      {
+        "id": "a-wVHL0lpb0-chunk-5",
+        "resourceId": "a-wVHL0lpb0",
+        "title": "JavaScript Full Course | JavaScript - Learn Everything | Sheryians Coding School (2:00:00-2:30:00)",
+        "url": "https://www.youtube.com/watch?v=a-wVHL0lpb0&t=7200s",
+        "durationSeconds": 1800,
+        "order": 4,
+        "completed": false
+      },
+      {
+        "id": "a-wVHL0lpb0-chunk-6",
+        "resourceId": "a-wVHL0lpb0",
+        "title": "JavaScript Full Course | JavaScript - Learn Everything | Sheryians Coding School (2:30:00-3:00:00)",
+        "url": "https://www.youtube.com/watch?v=a-wVHL0lpb0&t=9000s",
+        "durationSeconds": 1800,
+        "order": 5,
+        "completed": false
+      },
+      {
+        "id": "a-wVHL0lpb0-chunk-7",
+        "resourceId": "a-wVHL0lpb0",
+        "title": "JavaScript Full Course | JavaScript - Learn Everything | Sheryians Coding School (3:00:00-3:30:00)",
+        "url": "https://www.youtube.com/watch?v=a-wVHL0lpb0&t=10800s",
+        "durationSeconds": 1800,
+        "order": 6,
+        "completed": false
+      },
+      {
+        "id": "a-wVHL0lpb0-chunk-8",
+        "resourceId": "a-wVHL0lpb0",
+        "title": "JavaScript Full Course | JavaScript - Learn Everything | Sheryians Coding School (3:30:00-4:00:00)",
+        "url": "https://www.youtube.com/watch?v=a-wVHL0lpb0&t=12600s",
+        "durationSeconds": 1800,
+        "order": 7,
+        "completed": false
+      },
+      {
+        "id": "a-wVHL0lpb0-chunk-9",
+        "resourceId": "a-wVHL0lpb0",
+        "title": "JavaScript Full Course | JavaScript - Learn Everything | Sheryians Coding School (4:00:00-4:30:00)",
+        "url": "https://www.youtube.com/watch?v=a-wVHL0lpb0&t=14400s",
+        "durationSeconds": 1800,
+        "order": 8,
+        "completed": false
+      },
+      {
+        "id": "a-wVHL0lpb0-chunk-10",
+        "resourceId": "a-wVHL0lpb0",
+        "title": "JavaScript Full Course | JavaScript - Learn Everything | Sheryians Coding School (4:30:00-5:00:00)",
+        "url": "https://www.youtube.com/watch?v=a-wVHL0lpb0&t=16200s",
+        "durationSeconds": 1800,
+        "order": 9,
+        "completed": false
+      },
+      {
+        "id": "a-wVHL0lpb0-chunk-11",
+        "resourceId": "a-wVHL0lpb0",
+        "title": "JavaScript Full Course | JavaScript - Learn Everything | Sheryians Coding School (5:00:00-5:30:00)",
+        "url": "https://www.youtube.com/watch?v=a-wVHL0lpb0&t=18000s",
+        "durationSeconds": 1800,
+        "order": 10,
+        "completed": false
+      },
+      {
+        "id": "a-wVHL0lpb0-chunk-12",
+        "resourceId": "a-wVHL0lpb0",
+        "title": "JavaScript Full Course | JavaScript - Learn Everything | Sheryians Coding School (5:30:00-6:00:00)",
+        "url": "https://www.youtube.com/watch?v=a-wVHL0lpb0&t=19800s",
+        "durationSeconds": 1800,
+        "order": 11,
+        "completed": false
+      },
+      {
+        "id": "a-wVHL0lpb0-chunk-13",
+        "resourceId": "a-wVHL0lpb0",
+        "title": "JavaScript Full Course | JavaScript - Learn Everything | Sheryians Coding School (6:00:00-6:30:00)",
+        "url": "https://www.youtube.com/watch?v=a-wVHL0lpb0&t=21600s",
+        "durationSeconds": 1800,
+        "order": 12,
+        "completed": false
+      },
+      {
+        "id": "a-wVHL0lpb0-chunk-14",
+        "resourceId": "a-wVHL0lpb0",
+        "title": "JavaScript Full Course | JavaScript - Learn Everything | Sheryians Coding School (6:30:00-7:00:00)",
+        "url": "https://www.youtube.com/watch?v=a-wVHL0lpb0&t=23400s",
+        "durationSeconds": 1800,
+        "order": 13,
+        "completed": false
+      },
+      {
+        "id": "a-wVHL0lpb0-chunk-15",
+        "resourceId": "a-wVHL0lpb0",
+        "title": "JavaScript Full Course | JavaScript - Learn Everything | Sheryians Coding School (7:00:00-7:30:00)",
+        "url": "https://www.youtube.com/watch?v=a-wVHL0lpb0&t=25200s",
+        "durationSeconds": 1800,
+        "order": 14,
+        "completed": false
+      },
+      {
+        "id": "a-wVHL0lpb0-chunk-16",
+        "resourceId": "a-wVHL0lpb0",
+        "title": "JavaScript Full Course | JavaScript - Learn Everything | Sheryians Coding School (7:30:00-8:00:00)",
+        "url": "https://www.youtube.com/watch?v=a-wVHL0lpb0&t=27000s",
+        "durationSeconds": 1800,
+        "order": 15,
+        "completed": false
+      },
+      {
+        "id": "a-wVHL0lpb0-chunk-17",
+        "resourceId": "a-wVHL0lpb0",
+        "title": "JavaScript Full Course | JavaScript - Learn Everything | Sheryians Coding School (8:00:00-8:04:12)",
+        "url": "https://www.youtube.com/watch?v=a-wVHL0lpb0&t=28800s",
+        "durationSeconds": 252,
+        "order": 16,
+        "completed": false
+      }
+    ]
+  }
+]

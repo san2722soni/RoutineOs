@@ -1,10 +1,10 @@
-import { Keyboard, Text, TouchableOpacity, View } from "react-native";
-import { useEffect, useState } from "react";
-import type { BottomTabBarProps } from "@react-navigation/bottom-tabs";
-import { CalendarDays, CheckCircle2, Layers, ListChecks, Sliders } from "lucide-react-native";
-import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { appTheme, modeFromSetting } from "@/src/lib/theme";
 import { useRoutineStore } from "@/src/store/routineStore";
+import type { BottomTabBarProps } from "@react-navigation/bottom-tabs";
+import { CalendarDays, CheckCircle2, Layers, ListChecks, Sliders } from "lucide-react-native";
+import { useEffect, useState } from "react";
+import { Keyboard, Text, TouchableOpacity, View } from "react-native";
+import { useSafeAreaInsets } from "react-native-safe-area-context";
 
 const tabs = {
   index: { label: "Today", icon: CheckCircle2 },

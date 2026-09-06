@@ -1,20 +1,20 @@
-import { useEffect, useRef, useState } from "react";
-import { Redirect, Tabs } from "expo-router";
-import { AppState, ActivityIndicator, View } from "react-native";
-import { useToast } from "@/src/components/ToastProvider";
 import { NotificationPermissionBanner } from "@/src/components/NotificationPermissionBanner";
 import { OnboardingModal } from "@/src/components/OnboardingModal";
 import { RoutineTabBar } from "@/src/components/RoutineTabBar";
+import { useToast } from "@/src/components/ToastProvider";
 import { useOnlineStatus } from "@/src/hooks/useOnlineStatus";
-import { signOut, useSupabaseSession } from "@/src/lib/auth";
+import { recoverPendingData, signOut, useSupabaseSession } from "@/src/lib/auth";
 import { activateDeviceSession, assertActiveDevice, deviceOnboardingDone, markDeviceOnboardingDone } from "@/src/lib/deviceSession";
+import { logActionError, logActionSuccess } from "@/src/lib/logger";
 import { pushLocalSnapshot } from "@/src/lib/pushLocalSnapshot";
 import { isSupabaseConfigured } from "@/src/lib/supabase";
 import { pullSnapshot } from "@/src/lib/supabaseSync";
-import { logActionError, logActionSuccess } from "@/src/lib/logger";
 import { appTheme, modeFromSetting } from "@/src/lib/theme";
 import { useRoutineStore } from "@/src/store/routineStore";
 import { useTaskStore } from "@/src/store/taskStore";
+import { Redirect, Tabs } from "expo-router";
+import { useEffect, useRef, useState } from "react";
+import { ActivityIndicator, AppState, View } from "react-native";
 
 export default function TabLayout() {
   const settings = useRoutineStore((state) => state.settings);
@@ -48,15 +48,22 @@ export default function TabLayout() {
       activateDeviceSession()
         .then(async () => {
           if (cancelled) return;
+          await Promise.all([
+            useRoutineStore.persist.hasHydrated() ? Promise.resolve() : useRoutineStore.persist.rehydrate(),
+            useTaskStore.persist.hasHydrated() ? Promise.resolve() : useTaskStore.persist.rehydrate(),
+          ]);
+          if (cancelled) return;
+          await recoverPendingData(userId);
+          if (cancelled) return;
           const routineState = useRoutineStore.getState();
           const taskState = useTaskStore.getState();
           const hasPendingLocalChanges = routineState.sync.pendingPush || taskState.pendingPush;
           if (!hasPendingLocalChanges) {
             try {
               const snapshot = await pullSnapshot();
-              if (snapshot && !cancelled) {
+              if (snapshot && !cancelled && useRoutineStore.getState() === routineState && useTaskStore.getState() === taskState) {
                 useRoutineStore.getState().restoreFromBackup(snapshot);
-                useTaskStore.getState().restoreFromBackup(snapshot.places, snapshot.tasks, snapshot.lastSyncedAt);
+                useTaskStore.getState().restoreFromBackup(snapshot.places, snapshot.tasks, snapshot.lastSyncedAt, snapshot.deletedRecords);
                 logActionSuccess("restore cloud data after device activation");
               }
             } catch (error) {
@@ -109,7 +116,7 @@ export default function TabLayout() {
           title: "Signed out",
           message: "You were signed out because your account was used on another device.",
         });
-        signOut().catch((signOutError) => logActionError("inactive device sign out", signOutError));
+        signOut({ preservePending: true }).catch((signOutError) => logActionError("inactive device sign out", signOutError));
       });
     };
 

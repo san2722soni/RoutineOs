@@ -1,14 +1,14 @@
+import { AppIllustration } from "@/src/components/AppIllustration";
+import { useToast } from "@/src/components/ToastProvider";
+import { displayName, sendEmailOtp, useSupabaseSession, verifyEmailOtp } from "@/src/lib/auth";
+import { logActionError, logActionStart, logActionSuccess } from "@/src/lib/logger";
+import { appTheme, modeFromSetting } from "@/src/lib/theme";
+import { useRoutineStore } from "@/src/store/routineStore";
+import { Redirect, useRouter } from "expo-router";
+import { KeyRound, Lock, Mail, ShieldCheck, Zap } from "lucide-react-native";
 import { useRef, useState } from "react";
 import { ActivityIndicator, Keyboard, KeyboardAvoidingView, Platform, ScrollView, StatusBar, Text, TextInput, TouchableOpacity, useWindowDimensions, View } from "react-native";
-import { Redirect, useRouter } from "expo-router";
 import { SafeAreaView } from "react-native-safe-area-context";
-import { KeyRound, Lock, Mail, ShieldCheck, Zap } from "lucide-react-native";
-import { displayName, sendEmailOtp, useSupabaseSession, verifyEmailOtp } from "@/src/lib/auth";
-import { useToast } from "@/src/components/ToastProvider";
-import { AppIllustration } from "@/src/components/AppIllustration";
-import { appTheme, modeFromSetting } from "@/src/lib/theme";
-import { logActionError, logActionStart, logActionSuccess } from "@/src/lib/logger";
-import { useRoutineStore } from "@/src/store/routineStore";
 
 export default function LoginScreen() {
   const settings = useRoutineStore((state) => state.settings);

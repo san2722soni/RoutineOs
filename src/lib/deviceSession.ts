@@ -1,6 +1,6 @@
+import { supabase } from "@/src/lib/supabase";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import { NativeModules } from "react-native";
-import { supabase } from "@/src/lib/supabase";
 
 const deviceIdKey = "routineos-device-id";
 const onboardingKeyPrefix = "routineos-device-onboarding:";

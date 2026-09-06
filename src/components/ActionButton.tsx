@@ -1,6 +1,6 @@
+import type { appTheme } from "@/src/lib/theme";
 import type { ReactNode } from "react";
 import { ActivityIndicator, Text, TouchableOpacity } from "react-native";
-import type { appTheme } from "@/src/lib/theme";
 
 export function ActionButton({
   label,
@@ -27,8 +27,11 @@ export function ActionButton({
 
   return (
     <TouchableOpacity
+      accessibilityRole="button"
+      accessibilityLabel={label}
+      accessibilityState={{ disabled: disabled || loading, busy: loading }}
       className="flex-row items-center justify-center gap-2 rounded-2xl px-4 py-3"
-      style={{ backgroundColor: colors.bg, opacity: disabled ? 0.6 : 1 }}
+      style={{ backgroundColor: colors.bg, minHeight: 48, paddingHorizontal: 16, paddingVertical: 12, opacity: disabled || loading ? 0.6 : 1 }}
       onPress={disabled ? undefined : onPress}
       disabled={disabled || loading}
     >

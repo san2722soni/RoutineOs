@@ -1,8 +1,8 @@
-import type { ReactNode } from "react";
-import { Keyboard, KeyboardAvoidingView, Platform, ScrollView, StatusBar, View } from "react-native";
-import { useEffect, useRef } from "react";
-import { SafeAreaView } from "react-native-safe-area-context";
 import { appTheme } from "@/src/lib/theme";
+import type { ReactNode } from "react";
+import { useRef } from "react";
+import { KeyboardAvoidingView, Platform, ScrollView, StatusBar, View } from "react-native";
+import { SafeAreaView } from "react-native-safe-area-context";
 
 export function PageShell({
   children,
@@ -24,12 +24,6 @@ export function PageShell({
   const safeBackground = backgroundColor ?? theme.background;
   const scrollRef = useRef<ScrollView>(null);
 
-  useEffect(() => {
-    const subscription = Keyboard.addListener("keyboardDidShow", () => {
-      requestAnimationFrame(() => scrollRef.current?.scrollToEnd({ animated: true }));
-    });
-    return () => subscription.remove();
-  }, []);
 
   return (
     <SafeAreaView className="flex-1" style={{ backgroundColor: safeBackground }}>

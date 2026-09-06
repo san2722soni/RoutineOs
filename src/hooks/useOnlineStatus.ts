@@ -1,7 +1,7 @@
-import { useEffect, useState } from "react";
-import NetInfo from "@react-native-community/netinfo";
 import { env } from "@/src/lib/env";
 import { useRoutineStore } from "@/src/store/routineStore";
+import NetInfo from "@react-native-community/netinfo";
+import { useEffect, useState } from "react";
 
 export function useOnlineStatus() {
   const [online, setOnline] = useState(true);

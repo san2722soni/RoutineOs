@@ -1,26 +1,25 @@
 import "@/global.css";
-import { Stack, useRouter } from "expo-router";
-import { StatusBar } from "expo-status-bar";
-import * as SystemUI from "expo-system-ui";
-import { useFonts } from "expo-font";
-import * as SplashScreen from "expo-splash-screen";
-import { useCallback, useEffect, useState } from "react";
-import { GestureHandlerRootView } from "react-native-gesture-handler";
+import { StartupSplash } from "@/src/components/StartupSplash";
+import { ToastProvider } from "@/src/components/ToastProvider";
+import { usePlaceReminders } from "@/src/features/tasks/usePlaceReminders";
 import { dateFromOffset } from "@/src/lib/date";
 import { prepareNotifications, ROUTINE_DONE_ACTION, ROUTINE_OPEN_ACTION } from "@/src/lib/notifications";
 import { appTheme, modeFromSetting } from "@/src/lib/theme";
 import { useRoutineStore } from "@/src/store/routineStore";
-import { useTaskStore } from "@/src/store/taskStore";
-import { ToastProvider } from "@/src/components/ToastProvider";
-import { syncPlaceGeofencesIfAllowed } from "@/src/lib/locationReminders";
-import { StartupSplash } from "@/src/components/StartupSplash";
+import { useFonts } from "expo-font";
+import { Stack, useRouter } from "expo-router";
+import * as SplashScreen from "expo-splash-screen";
+import { StatusBar } from "expo-status-bar";
+import * as SystemUI from "expo-system-ui";
+import { useCallback, useEffect, useState } from "react";
+import { GestureHandlerRootView } from "react-native-gesture-handler";
 
 SplashScreen.preventAutoHideAsync().catch(() => undefined);
 
 export default function RootLayout() {
   const router = useRouter();
   const settings = useRoutineStore((state) => state.settings);
-  const places = useTaskStore((state) => state.places);
+  usePlaceReminders();
   const mode = modeFromSetting(settings.themeMode);
   const theme = appTheme(mode);
   const [fontsLoaded] = useFonts({
@@ -43,8 +42,13 @@ export default function RootLayout() {
     let subscription: { remove: () => void } | undefined;
 
     prepareNotifications().then((Notifications) => {
-      subscription = Notifications?.addNotificationResponseReceivedListener((response) => {
+      if (!Notifications) return;
+      const handleResponse = (response: import("expo-notifications").NotificationResponse) => {
         const data = response.notification.request.content.data;
+        if (String(data.kind ?? "").startsWith("place-task")) {
+          router.push({ pathname: "/(tabs)/tasks", params: { placeId: String(data.placeId ?? "") } });
+          return;
+        }
         const reminderKind = String(data.reminderKind ?? "");
         const title = String(data.title ?? "RoutineOS");
         const minutes = String(data.minutes ?? "");
@@ -57,15 +61,16 @@ export default function RootLayout() {
         }
 
         router.push({ pathname: "/(tabs)", params: { reminderKind, reminderTitle: title, reminderMinutes: minutes, notificationAction } });
+      };
+      subscription = Notifications.addNotificationResponseReceivedListener(handleResponse);
+      Notifications.getLastNotificationResponseAsync().then((response) => {
+        if (response) { handleResponse(response); Notifications.clearLastNotificationResponseAsync(); }
       });
     });
 
     return () => subscription?.remove();
   }, [router]);
 
-  useEffect(() => {
-    syncPlaceGeofencesIfAllowed(places).catch(() => undefined);
-  }, [places]);
 
   useEffect(() => {
     SystemUI.setBackgroundColorAsync(theme.background);

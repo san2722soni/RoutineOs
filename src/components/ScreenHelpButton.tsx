@@ -1,8 +1,8 @@
-import { useState } from "react";
-import { Modal, Text, TouchableOpacity, View } from "react-native";
-import { HelpCircle, X } from "lucide-react-native";
 import { AppIllustration, type IllustrationName } from "@/src/components/AppIllustration";
 import { appTheme } from "@/src/lib/theme";
+import { HelpCircle, X } from "lucide-react-native";
+import { useState } from "react";
+import { Modal, Text, TouchableOpacity, View } from "react-native";
 
 type HelpStep = {
   title: string;

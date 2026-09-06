@@ -1,73 +1,50 @@
-import { useEffect, useRef, useState } from "react";
-import { Animated, Easing, Text, View } from "react-native";
 import ConfidentIllustration from "@/assets/confident.svg";
-import RoutineOsMark from "@/assets/routineos-mark.svg";
 import type { appTheme } from "@/src/lib/theme";
+import { useEffect, useRef, useState } from "react";
+import { AccessibilityInfo, Animated, Easing, Text, View } from "react-native";
 
 const message = "Own the day before it owns you.";
-
 export function StartupSplash({ theme, onComplete }: { theme: ReturnType<typeof appTheme>; onComplete: () => void }) {
-  const [visibleText, setVisibleText] = useState("");
-  const screenOpacity = useRef(new Animated.Value(0)).current;
-  const illustrationOpacity = useRef(new Animated.Value(0)).current;
-  const cursorOpacity = useRef(new Animated.Value(1)).current;
-  const exitOpacity = useRef(new Animated.Value(1)).current;
-
+  const [text, setText] = useState("");
+  const reveal = useRef(new Animated.Value(0)).current;
+  const opacity = useRef(new Animated.Value(1)).current;
+  const cursor = useRef(new Animated.Value(1)).current;
   useEffect(() => {
-    Animated.parallel([
-      Animated.timing(screenOpacity, { toValue: 1, duration: 450, easing: Easing.out(Easing.cubic), useNativeDriver: true }),
-      Animated.timing(illustrationOpacity, { toValue: 1, duration: 700, delay: 180, easing: Easing.out(Easing.cubic), useNativeDriver: true }),
-    ]).start();
-
-    let index = 0;
-    const typingTimer = setInterval(() => {
-      index += 1;
-      setVisibleText(message.slice(0, index));
-      if (index >= message.length) {
-        clearInterval(typingTimer);
-        setTimeout(() => {
-          Animated.sequence([
-            Animated.timing(cursorOpacity, { toValue: 0.15, duration: 430, useNativeDriver: true }),
-            Animated.timing(cursorOpacity, { toValue: 1, duration: 430, useNativeDriver: true }),
-          ]).start();
-        }, 80);
+    let cancelled = false;
+    let typing: ReturnType<typeof setInterval> | undefined;
+    const timers: ReturnType<typeof setTimeout>[] = [];
+    const blink = Animated.loop(Animated.sequence([
+      Animated.timing(cursor, { toValue: 0, duration: 450, useNativeDriver: true }),
+      Animated.timing(cursor, { toValue: 1, duration: 450, useNativeDriver: true }),
+    ]));
+    const start = (reduced: boolean) => {
+      if (cancelled) return;
+      Animated.timing(reveal, { toValue: 1, duration: reduced ? 0 : 800, easing: Easing.out(Easing.cubic), useNativeDriver: true }).start();
+      if (reduced) setText(message);
+      else {
+        blink.start();
+        timers.push(setTimeout(() => {
+          let index = 0;
+          typing = setInterval(() => {
+            setText(message.slice(0, ++index));
+            if (index === message.length) clearInterval(typing);
+          }, 42);
+        }, 500));
       }
-    }, 48);
-
-    const blink = Animated.loop(
-      Animated.sequence([
-        Animated.timing(cursorOpacity, { toValue: 0.15, duration: 500, useNativeDriver: true }),
-        Animated.timing(cursorOpacity, { toValue: 1, duration: 500, useNativeDriver: true }),
-      ]),
-    );
-    blink.start();
-
-    const exitTimer = setTimeout(() => {
-      Animated.timing(exitOpacity, { toValue: 0, duration: 500, easing: Easing.inOut(Easing.cubic), useNativeDriver: true }).start(({ finished }) => {
-        if (finished) onComplete();
-      });
-    }, message.length * 48 + 1500);
-
-    return () => {
-      clearInterval(typingTimer);
-      clearTimeout(exitTimer);
-      blink.stop();
+      timers.push(setTimeout(() => {
+        Animated.timing(opacity, { toValue: 0, duration: reduced ? 0 : 450, useNativeDriver: true }).start(({ finished }) => { if (finished && !cancelled) onComplete(); });
+      }, reduced ? 700 : 500 + message.length * 42 + 650));
     };
-  }, [cursorOpacity, exitOpacity, illustrationOpacity, onComplete, screenOpacity]);
-
-  return (
-    <Animated.View className="flex-1 items-center justify-center px-8" style={{ backgroundColor: theme.background, opacity: Animated.multiply(screenOpacity, exitOpacity) }}>
-      <Animated.View style={{ opacity: illustrationOpacity, transform: [{ scale: illustrationOpacity.interpolate({ inputRange: [0, 1], outputRange: [0.94, 1] }) }] }}>
-        <ConfidentIllustration width={220} height={205} />
-      </Animated.View>
-      <View className="mt-6 items-center">
-        <View className="mt-5 min-h-12 flex-row items-center justify-center">
-          <Text className="font-SatoshiBlack text-center text-3xl leading-7" style={{ color: theme.text }}>
-            {visibleText}
-          </Text>
-          <Animated.View className="ml-1 h-6 w-0.5" style={{ backgroundColor: theme.primary, opacity: cursorOpacity }} />
-        </View>
-      </View>
+    AccessibilityInfo.isReduceMotionEnabled().then(start).catch(() => start(false));
+    return () => { cancelled = true; timers.forEach(clearTimeout); clearInterval(typing); blink.stop(); reveal.stopAnimation(); opacity.stopAnimation(); };
+  }, [cursor, onComplete, opacity, reveal]);
+  return <Animated.View accessibilityLabel={message} className="flex-1 items-center justify-center px-8" style={{ backgroundColor: theme.background, opacity }}>
+    <Animated.View style={{ opacity: reveal, transform: [{ translateY: reveal.interpolate({ inputRange: [0, 1], outputRange: [16, 0] }) }, { scale: reveal.interpolate({ inputRange: [0, 1], outputRange: [0.94, 1] }) }] }}>
+      <ConfidentIllustration width={220} height={205} />
     </Animated.View>
-  );
+    <View className="mt-9 items-center" style={{ width: "100%", maxWidth: 310, minHeight: 88 }}>
+      <Text accessible={false} className="font-SatoshiBlack text-center text-2xl leading-8" style={{ color: theme.text }}>{text}<Text style={{ color: theme.primary }}> </Text></Text>
+      <Animated.View style={{ opacity: cursor, height: 3, width: 22, borderRadius: 2, backgroundColor: theme.primary, marginTop: 18 }} />
+    </View>
+  </Animated.View>;
 }

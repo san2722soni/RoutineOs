@@ -1,6 +1,6 @@
+import type { appTheme } from "@/src/lib/theme";
 import type { LucideIcon } from "lucide-react-native";
 import { Text, TouchableOpacity, View } from "react-native";
-import type { appTheme } from "@/src/lib/theme";
 
 type SegmentedTab<T extends string> = {
   id: T;

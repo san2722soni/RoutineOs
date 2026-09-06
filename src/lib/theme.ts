@@ -2,7 +2,7 @@ import type { ThemePreference } from "@/src/types";
 
 export type ThemeMode = ThemePreference;
 
-export function appTheme(mode: ThemeMode) {
+function createTheme(mode: ThemeMode) {
   if (mode === "dark") {
     return {
       mode,
@@ -39,6 +39,9 @@ export function appTheme(mode: ThemeMode) {
     error: "#C95C61",
   };
 }
+
+const themes = { dark: createTheme("dark"), light: createTheme("light") };
+export function appTheme(mode: ThemeMode) { return themes[mode]; }
 
 export function modeFromSetting(themeMode?: ThemePreference): ThemeMode {
   return themeMode === "dark" ? "dark" : "light";

@@ -1,6 +1,6 @@
+import type { appTheme } from "@/src/lib/theme";
 import type { ReactNode } from "react";
 import { TouchableOpacity } from "react-native";
-import type { appTheme } from "@/src/lib/theme";
 
 export function IconCircleButton({
   icon,

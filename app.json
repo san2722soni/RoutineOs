@@ -17,12 +17,16 @@
     },
     "android": {
       "adaptiveIcon": {
-          "foregroundImage": "./assets/routineos-mark.svg",
+        "foregroundImage": "./assets/routineos-mark.svg",
         "backgroundColor": "#0F172A"
       },
       "allowBackup": false,
       "softwareKeyboardLayoutMode": "resize",
-      "permissions": ["ACCESS_COARSE_LOCATION", "ACCESS_FINE_LOCATION", "ACCESS_BACKGROUND_LOCATION"],
+      "permissions": [
+        "ACCESS_COARSE_LOCATION",
+        "ACCESS_FINE_LOCATION",
+        "ACCESS_BACKGROUND_LOCATION"
+      ],
       "package": "com.anonymous.RoutineOs"
     },
     "web": {
@@ -50,11 +54,14 @@
       [
         "expo-location",
         {
-          "locationAlwaysAndWhenInUsePermission": "Allow RoutineOS to remind you about tasks when you arrive at saved places."
+          "locationAlwaysAndWhenInUsePermission": "Allow RoutineOS to remind you about tasks when you arrive at saved places.",
+          "isIosBackgroundLocationEnabled": true,
+          "isAndroidBackgroundLocationEnabled": true
         }
       ],
       "./plugins/withGoogleMapsApiKey",
-      "expo-build-properties"
+      "expo-build-properties",
+      "./plugins/withPlacesBridge"
     ],
     "experiments": {
       "typedRoutes": true

@@ -1,10 +1,10 @@
+import { getNotificationPermissionStatus } from "@/src/lib/notifications";
+import * as Location from "expo-location";
+import { useRouter } from "expo-router";
+import { BellOff } from "lucide-react-native";
 import { useEffect, useState } from "react";
 import { AppState, Text, TouchableOpacity } from "react-native";
-import { useRouter } from "expo-router";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
-import * as Location from "expo-location";
-import { BellOff } from "lucide-react-native";
-import { getNotificationPermissionStatus } from "@/src/lib/notifications";
 
 export function NotificationPermissionBanner() {
   const router = useRouter();

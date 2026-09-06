@@ -1,6 +1,6 @@
-import { Text, View } from "react-native";
-import type { LucideIcon } from "lucide-react-native";
 import type { appTheme } from "@/src/lib/theme";
+import type { LucideIcon } from "lucide-react-native";
+import { Text, View } from "react-native";
 
 export function SectionTitle({
   icon: Icon,

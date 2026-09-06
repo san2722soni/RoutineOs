@@ -1,20 +1,20 @@
+import { AreaOption } from "@/src/components/AreaOption";
+import { NotificationPermissionBanner } from "@/src/components/NotificationPermissionBanner";
+import { ScreenHelpButton } from "@/src/components/ScreenHelpButton";
+import { TimePickerField } from "@/src/components/TimePickerField";
+import { useToast } from "@/src/components/ToastProvider";
+import { categoryById } from "@/src/lib/categories";
+import { blockDurationSeconds, timeToMinutes } from "@/src/lib/date";
+import { templateForDate } from "@/src/lib/templates";
+import { appTheme, modeFromSetting } from "@/src/lib/theme";
+import { formatDuration } from "@/src/lib/youtube";
+import { useRoutineStore } from "@/src/store/routineStore";
+import type { RoutineTemplate, TemplateBlock } from "@/src/types";
+import { useLocalSearchParams, useRouter } from "expo-router";
+import { ArrowLeft, Check, ChevronDown, Plus, Trash2 } from "lucide-react-native";
 import { useEffect, useMemo, useRef, useState } from "react";
 import { Keyboard, KeyboardAvoidingView, Platform, ScrollView, StatusBar, Text, TextInput, TouchableOpacity, View } from "react-native";
 import { SafeAreaView, useSafeAreaInsets } from "react-native-safe-area-context";
-import { useLocalSearchParams, useRouter } from "expo-router";
-import { ArrowLeft, Check, ChevronDown, Plus, Trash2 } from "lucide-react-native";
-import { categoryById } from "@/src/lib/categories";
-import { blockDurationSeconds, timeToMinutes } from "@/src/lib/date";
-import { appTheme, modeFromSetting } from "@/src/lib/theme";
-import { templateForDate } from "@/src/lib/templates";
-import { formatDuration } from "@/src/lib/youtube";
-import { useRoutineStore } from "@/src/store/routineStore";
-import { useToast } from "@/src/components/ToastProvider";
-import { ScreenHelpButton } from "@/src/components/ScreenHelpButton";
-import { AreaOption } from "@/src/components/AreaOption";
-import { TimePickerField } from "@/src/components/TimePickerField";
-import { NotificationPermissionBanner } from "@/src/components/NotificationPermissionBanner";
-import type { RoutineTemplate, TemplateBlock } from "@/src/types";
 
 const dayNames = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
 
@@ -147,113 +147,113 @@ export default function TemplateEditorScreen() {
           </View>
 
           <View className="flex-1">
-          <ScrollView ref={formScrollRef} className="flex-1" contentContainerStyle={{ paddingVertical: 16, paddingBottom: Math.max(insets.bottom, 12) + 180 }} keyboardShouldPersistTaps="handled" keyboardDismissMode="on-drag" onScrollBeginDrag={Keyboard.dismiss} automaticallyAdjustKeyboardInsets showsVerticalScrollIndicator={false}>
-            <Text className="font-SatoshiBlack text-xs" style={{ color: theme.mutedText }}>
-              Routine Name
-            </Text>
-            <TextInput className="font-SatoshiBlack mt-2 rounded-xl border px-4 py-3 text-sm" style={{ backgroundColor: theme.input, borderColor: theme.border, color: theme.text }} placeholderTextColor={theme.mutedText} value={draft.name} onChangeText={(name) => setDraft((current) => ({ ...current, name }))} />
-
-            <Text className="font-SatoshiBlack mt-4 text-xs" style={{ color: theme.mutedText }}>
-              Description
-            </Text>
-            <TextInput className="font-SatoshiMedium mt-2 rounded-xl border px-4 py-3 text-xs" style={{ backgroundColor: theme.input, borderColor: theme.border, color: theme.mutedText }} placeholderTextColor={theme.mutedText} value={draft.description ?? ""} onChangeText={(description) => setDraft((current) => ({ ...current, description }))} />
-
-            <View className="mt-4 flex-row items-center justify-between">
+            <ScrollView ref={formScrollRef} className="flex-1" contentContainerStyle={{ paddingVertical: 16, paddingBottom: Math.max(insets.bottom, 12) + 180 }} keyboardShouldPersistTaps="handled" keyboardDismissMode="on-drag" onScrollBeginDrag={Keyboard.dismiss} automaticallyAdjustKeyboardInsets showsVerticalScrollIndicator={false}>
               <Text className="font-SatoshiBlack text-xs" style={{ color: theme.mutedText }}>
-                Active Days
+                Routine Name
               </Text>
-              <Text className="font-SatoshiBlack text-xs" style={{ color: totalSeconds > 18 * 60 * 60 ? "#EF4444" : theme.primary }}>
-                {formatDuration(totalSeconds)} / 18:00:00
-              </Text>
-            </View>
-            <View className="mt-2 flex-row flex-wrap gap-2">
-              {dayNames.map((day, index) => {
-                const selected = draft.dayRules.includes(index);
-                return (
-                  <TouchableOpacity key={day} className="rounded-xl px-3 py-2" style={{ backgroundColor: selected ? theme.primary : theme.surfaceAlt }} onPress={() => toggleDay(index)}>
-                    <Text className="font-SatoshiBlack text-xs" style={{ color: selected ? theme.primaryText : theme.mutedText }}>
-                      {day}
-                    </Text>
-                  </TouchableOpacity>
-                );
-              })}
-            </View>
+              <TextInput className="font-SatoshiBlack mt-2 rounded-xl border px-4 py-3 text-sm" style={{ backgroundColor: theme.input, borderColor: theme.border, color: theme.text }} placeholderTextColor={theme.mutedText} value={draft.name} onChangeText={(name) => setDraft((current) => ({ ...current, name }))} />
 
-            <View className="mt-5 flex-row items-center justify-between">
-              <Text className="font-SatoshiBlack text-xs" style={{ color: theme.mutedText }}>
-                Activities ({draft.blocks.length})
+              <Text className="font-SatoshiBlack mt-4 text-xs" style={{ color: theme.mutedText }}>
+                Description
               </Text>
-              <TouchableOpacity className="flex-row items-center gap-2 rounded-xl px-3 py-2" style={{ backgroundColor: theme.surfaceAlt }} onPress={addBlock}>
-                <Plus size={15} color={theme.primary} />
-                <Text className="font-SatoshiBlack text-xs" style={{ color: theme.primary }}>
-                  Add Activity
+              <TextInput className="font-SatoshiMedium mt-2 rounded-xl border px-4 py-3 text-xs" style={{ backgroundColor: theme.input, borderColor: theme.border, color: theme.mutedText }} placeholderTextColor={theme.mutedText} value={draft.description ?? ""} onChangeText={(description) => setDraft((current) => ({ ...current, description }))} />
+
+              <View className="mt-4 flex-row items-center justify-between">
+                <Text className="font-SatoshiBlack text-xs" style={{ color: theme.mutedText }}>
+                  Active Days
                 </Text>
-              </TouchableOpacity>
-            </View>
-
-            <View className="mt-3 gap-3">
-              {draft.blocks.map((block, index) => {
-                const category = categoryById(categories, block.categoryId);
-                return (
-                  <View key={`${block.id}-${index}`} className="rounded-2xl border p-3" style={{ backgroundColor: dark ? "#1A1D24" : "#F8FAFC", borderColor: theme.border }}>
-                    <View className="flex-row items-center justify-between">
-                      <Text className="font-SatoshiBlack rounded-lg px-2 py-1 text-[10px] uppercase" style={{ backgroundColor: theme.surfaceAlt, color: theme.mutedText }}>
-                        Activity #{index + 1}
+                <Text className="font-SatoshiBlack text-xs" style={{ color: totalSeconds > 18 * 60 * 60 ? "#EF4444" : theme.primary }}>
+                  {formatDuration(totalSeconds)} / 18:00:00
+                </Text>
+              </View>
+              <View className="mt-2 flex-row flex-wrap gap-2">
+                {dayNames.map((day, index) => {
+                  const selected = draft.dayRules.includes(index);
+                  return (
+                    <TouchableOpacity key={day} className="rounded-xl px-3 py-2" style={{ backgroundColor: selected ? theme.primary : theme.surfaceAlt }} onPress={() => toggleDay(index)}>
+                      <Text className="font-SatoshiBlack text-xs" style={{ color: selected ? theme.primaryText : theme.mutedText }}>
+                        {day}
                       </Text>
-                      <View className="flex-row items-center gap-2">
-                        <View className="rounded-lg border px-2 py-1" style={{ backgroundColor: theme.input, borderColor: theme.border }}>
-                          <Text className="font-SatoshiBlack text-xs" style={{ color: category.color }}>
+                    </TouchableOpacity>
+                  );
+                })}
+              </View>
+
+              <View className="mt-5 flex-row items-center justify-between">
+                <Text className="font-SatoshiBlack text-xs" style={{ color: theme.mutedText }}>
+                  Activities ({draft.blocks.length})
+                </Text>
+                <TouchableOpacity className="flex-row items-center gap-2 rounded-xl px-3 py-2" style={{ backgroundColor: theme.surfaceAlt }} onPress={addBlock}>
+                  <Plus size={15} color={theme.primary} />
+                  <Text className="font-SatoshiBlack text-xs" style={{ color: theme.primary }}>
+                    Add Activity
+                  </Text>
+                </TouchableOpacity>
+              </View>
+
+              <View className="mt-3 gap-3">
+                {draft.blocks.map((block, index) => {
+                  const category = categoryById(categories, block.categoryId);
+                  return (
+                    <View key={`${block.id}-${index}`} className="rounded-2xl border p-3" style={{ backgroundColor: dark ? "#1A1D24" : "#F8FAFC", borderColor: theme.border }}>
+                      <View className="flex-row items-center justify-between">
+                        <Text className="font-SatoshiBlack rounded-lg px-2 py-1 text-[10px] uppercase" style={{ backgroundColor: theme.surfaceAlt, color: theme.mutedText }}>
+                          Activity #{index + 1}
+                        </Text>
+                        <View className="flex-row items-center gap-2">
+                          <View className="rounded-lg border px-2 py-1" style={{ backgroundColor: theme.input, borderColor: theme.border }}>
+                            <Text className="font-SatoshiBlack text-xs" style={{ color: category.color }}>
+                              {category.label}
+                            </Text>
+                          </View>
+                          <TouchableOpacity className="h-9 w-9 items-center justify-center rounded-full border" style={{ backgroundColor: theme.surfaceAlt, borderColor: theme.border, opacity: draft.blocks.length <= 1 ? 0.5 : 1 }} disabled={draft.blocks.length <= 1} onPress={() => removeBlock(index)}>
+                            <Trash2 size={17} color={draft.blocks.length <= 1 ? theme.mutedText : "#EF4444"} />
+                          </TouchableOpacity>
+                        </View>
+                      </View>
+
+                      <View className="mt-3 flex-row gap-2">
+                        <TimePickerField label="Start" value={block.start} theme={theme} onChange={(start) => updateBlock(index, { start })} />
+                        <TimePickerField label="End" value={block.end} theme={theme} onChange={(end) => updateBlock(index, { end })} />
+                      </View>
+
+                      <Text className="font-SatoshiMedium mt-3 text-[10px]" style={{ color: theme.mutedText }}>
+                        Activity Title
+                      </Text>
+                      <TextInput className="font-SatoshiBlack mt-1 rounded-lg border px-3 py-2 text-xs" style={{ backgroundColor: theme.input, borderColor: theme.border, color: theme.text }} placeholder="Activity title..." placeholderTextColor={theme.mutedText} value={block.label} onChangeText={(label) => updateBlock(index, { label })} />
+
+                      <TouchableOpacity className="mt-3 flex-row items-center justify-between rounded-xl border px-3 py-3" style={{ backgroundColor: theme.input, borderColor: theme.border }} onPress={() => setOpenCategoryIndex((current) => (current === index ? null : index))}>
+                        <View className="flex-row items-center gap-2">
+                          <View className="h-3 w-3 rounded-full" style={{ backgroundColor: category.color }} />
+                          <Text className="font-SatoshiBlack text-xs" style={{ color: theme.text }}>
                             {category.label}
                           </Text>
                         </View>
-                        <TouchableOpacity className="h-9 w-9 items-center justify-center rounded-full border" style={{ backgroundColor: theme.surfaceAlt, borderColor: theme.border, opacity: draft.blocks.length <= 1 ? 0.5 : 1 }} disabled={draft.blocks.length <= 1} onPress={() => removeBlock(index)}>
-                          <Trash2 size={17} color={draft.blocks.length <= 1 ? theme.mutedText : "#EF4444"} />
-                        </TouchableOpacity>
-                      </View>
+                        <ChevronDown size={15} color={theme.mutedText} />
+                      </TouchableOpacity>
+                      {openCategoryIndex === index && (
+                        <ScrollView className="mt-2 rounded-xl border p-2" style={{ backgroundColor: theme.input, borderColor: theme.border, maxHeight: 244 }} nestedScrollEnabled>
+                          {categories.map((item) => (
+                            <AreaOption
+                              key={item.id}
+                              label={item.label}
+                              active={draft.blocks[index].categoryId === item.id}
+                              color={item.color}
+                              theme={theme}
+                              onPress={() => {
+                                updateBlock(index, { categoryId: item.id });
+                                setOpenCategoryIndex(null);
+                              }}
+                            />
+                          ))}
+                        </ScrollView>
+                      )}
+
                     </View>
-
-                    <View className="mt-3 flex-row gap-2">
-                      <TimePickerField label="Start" value={block.start} theme={theme} onChange={(start) => updateBlock(index, { start })} />
-                      <TimePickerField label="End" value={block.end} theme={theme} onChange={(end) => updateBlock(index, { end })} />
-                    </View>
-
-                    <Text className="font-SatoshiMedium mt-3 text-[10px]" style={{ color: theme.mutedText }}>
-                      Activity Title
-                    </Text>
-                    <TextInput className="font-SatoshiBlack mt-1 rounded-lg border px-3 py-2 text-xs" style={{ backgroundColor: theme.input, borderColor: theme.border, color: theme.text }} placeholder="Activity title..." placeholderTextColor={theme.mutedText} value={block.label} onChangeText={(label) => updateBlock(index, { label })} />
-
-                    <TouchableOpacity className="mt-3 flex-row items-center justify-between rounded-xl border px-3 py-3" style={{ backgroundColor: theme.input, borderColor: theme.border }} onPress={() => setOpenCategoryIndex((current) => (current === index ? null : index))}>
-                      <View className="flex-row items-center gap-2">
-                        <View className="h-3 w-3 rounded-full" style={{ backgroundColor: category.color }} />
-                        <Text className="font-SatoshiBlack text-xs" style={{ color: theme.text }}>
-                          {category.label}
-                        </Text>
-                      </View>
-                      <ChevronDown size={15} color={theme.mutedText} />
-                    </TouchableOpacity>
-                    {openCategoryIndex === index && (
-                      <ScrollView className="mt-2 rounded-xl border p-2" style={{ backgroundColor: theme.input, borderColor: theme.border, maxHeight: 244 }} nestedScrollEnabled>
-                        {categories.map((item) => (
-                          <AreaOption
-                            key={item.id}
-                            label={item.label}
-                            active={draft.blocks[index].categoryId === item.id}
-                            color={item.color}
-                            theme={theme}
-                            onPress={() => {
-                              updateBlock(index, { categoryId: item.id });
-                              setOpenCategoryIndex(null);
-                            }}
-                          />
-                        ))}
-                      </ScrollView>
-                    )}
-
-                  </View>
-                );
-              })}
-            </View>
-          </ScrollView>
+                  );
+                })}
+              </View>
+            </ScrollView>
           </View>
 
           <View className="absolute bottom-0 left-0 right-0 flex-row gap-2 border-t px-4 pt-3" style={{ borderTopColor: theme.border, backgroundColor: theme.background, paddingBottom: Math.max(insets.bottom, 12) }}>
@@ -295,7 +295,7 @@ function validateTemplateDraft(draft: RoutineTemplate, totalSeconds: number) {
   const indexed = draft.blocks
     .map((block, index) => ({ block, index }))
     .sort((a, b) => timeToMinutes(a.block.start) - timeToMinutes(b.block.start));
-  for (let index = 1; index < indexed.length; index += 1) {
+  for (let index = 1;index < indexed.length;index += 1) {
     const previous = indexed[index - 1];
     const current = indexed[index];
     if (timeToMinutes(current.block.start) < timeToMinutes(previous.block.end)) {

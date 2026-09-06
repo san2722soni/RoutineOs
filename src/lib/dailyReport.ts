@@ -1,9 +1,9 @@
-import * as Print from "expo-print";
-import * as Sharing from "expo-sharing";
 import { categoryById } from "@/src/lib/categories";
 import { blockDurationSeconds, displayDate, formatRange } from "@/src/lib/date";
 import { formatDuration } from "@/src/lib/youtube";
 import type { Category, DailyPlan, Settings } from "@/src/types";
+import * as Print from "expo-print";
+import * as Sharing from "expo-sharing";
 
 function escapeHtml(value: string) {
   return value.replace(/[&<>"']/g, (char) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[char] ?? char);
@@ -46,13 +46,12 @@ export async function shareDailyReport(plan: DailyPlan, categories: Category[], 
           <h3>Goal</h3>
           <p>${escapeHtml(block.goal || "No goal added.")}</p>
           ${block.notes?.trim() ? `<h3>Notes</h3><p>${escapeHtml(block.notes)}</p>` : ""}
-          ${
-            resources.length
-              ? `<h3>Videos in this block</h3><ol>${resources
-                  .map((item) => `<li><span>${escapeHtml(item.title)}</span><em>${formatDuration(item.durationSeconds)}</em></li>`)
-                  .join("")}</ol>`
-              : ""
-          }
+          ${resources.length
+          ? `<h3>Videos in this block</h3><ol>${resources
+            .map((item) => `<li><span>${escapeHtml(item.title)}</span><em>${formatDuration(item.durationSeconds)}</em></li>`)
+            .join("")}</ol>`
+          : ""
+        }
         </section>`;
     })
     .join("");

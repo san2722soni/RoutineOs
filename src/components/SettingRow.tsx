@@ -1,5 +1,5 @@
-import { Switch, Text, View } from "react-native";
 import type { appTheme } from "@/src/lib/theme";
+import { Switch, Text, View } from "react-native";
 
 export function SettingRow({
   title,

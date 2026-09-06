@@ -1,13 +1,13 @@
-import { useEffect, useState } from "react";
-import { ActivityIndicator, Text } from "react-native";
-import { Redirect, useLocalSearchParams } from "expo-router";
-import { SafeAreaView } from "react-native-safe-area-context";
+import { useToast } from "@/src/components/ToastProvider";
 import { useSupabaseSession } from "@/src/lib/auth";
+import { errorMessage, logActionError, logActionStart, logActionSuccess } from "@/src/lib/logger";
 import { supabase } from "@/src/lib/supabase";
 import { appTheme, modeFromSetting } from "@/src/lib/theme";
 import { useRoutineStore } from "@/src/store/routineStore";
-import { useToast } from "@/src/components/ToastProvider";
-import { errorMessage, logActionError, logActionStart, logActionSuccess } from "@/src/lib/logger";
+import { Redirect, useLocalSearchParams } from "expo-router";
+import { useEffect, useState } from "react";
+import { ActivityIndicator, Text } from "react-native";
+import { SafeAreaView } from "react-native-safe-area-context";
 
 export default function AuthCallbackScreen() {
   const params = useLocalSearchParams<{ code?: string; access_token?: string; refresh_token?: string }>();

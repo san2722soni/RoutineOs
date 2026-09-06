@@ -8,7 +8,6 @@ export type Settings = {
   soundEnabled: boolean;
   startReminderMinutes: number;
   endReminderMinutes: number;
-  reminderRetentionMinutes: number;
   onboardingCompleted: boolean;
 };
 
@@ -140,7 +139,6 @@ export type ReminderTask = {
   id: string;
   title: string;
   placeId: string;
-  dueDate: string;
   completed: boolean;
   createdAt: string;
   completedAt?: string;

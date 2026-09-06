@@ -1,8 +1,8 @@
-import type { ReactNode } from "react";
-import { Modal, Text, TouchableOpacity, View } from "react-native";
-import type { appTheme } from "@/src/lib/theme";
 import { IconCircleButton } from "@/src/components/IconCircleButton";
+import type { appTheme } from "@/src/lib/theme";
 import { X } from "lucide-react-native";
+import type { ReactNode } from "react";
+import { KeyboardAvoidingView, Modal, Platform, ScrollView, Text, View } from "react-native";
 
 export function ModalShell({
   visible,
@@ -21,8 +21,8 @@ export function ModalShell({
 }) {
   return (
     <Modal visible={visible} transparent animationType="fade" onRequestClose={onClose}>
-      <View className="flex-1 justify-end" style={{ backgroundColor: "#00000099" }}>
-        <View className="rounded-t-[28px] border px-5 pb-8 pt-5" style={{ backgroundColor: theme.surface, borderColor: theme.border }}>
+      <KeyboardAvoidingView behavior={Platform.OS === "ios" ? "padding" : "height"} className="flex-1 justify-end" style={{ backgroundColor: "#00000099" }}>
+        <View className="max-h-[90%] rounded-t-[28px] border px-5 pb-8 pt-5" style={{ backgroundColor: theme.surface, borderColor: theme.border }}>
           <View className="flex-row items-start justify-between gap-4">
             <View className="flex-1">
               <Text className="font-SpaceGroteskBold text-xl" style={{ color: theme.text }}>
@@ -41,9 +41,9 @@ export function ModalShell({
               backgroundColor={theme.input}
             />
           </View>
-          {children}
+          <ScrollView keyboardShouldPersistTaps="handled" showsVerticalScrollIndicator={false}>{children}</ScrollView>
         </View>
-      </View>
+      </KeyboardAvoidingView>
     </Modal>
   );
 }
